@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('login');
-});
+Route::get('/', 'MainController@index');
+Route::get('/login', 'MainController@login');
+Route::get('/signup', 'MainController@signup');
 
 Route::get('/register', function () {
     return view('register');
@@ -21,4 +21,8 @@ Route::get('/register', function () {
 
 Route::get('/dashboard', function () {
     return view('dashboard');
+});
+
+Route::get('/index', function () {
+    return view('main.index');
 });
