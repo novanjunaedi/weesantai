@@ -41,11 +41,11 @@
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active"><a href="index.html" class="nav-link">Beranda</a></li>
-					<li class="nav-item"><a href="destination.html" class="nav-link">Destinati</a></li>
+					<li class="nav-item"><a href="destination.html" class="nav-link">Destinasi</a></li>
 					<li class="nav-item"><a href="about.html" class="nav-link">Tentang</a></li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">Kontak</a></li>
-					<li class="nav-item cta"><a href="/login" class="nav-link">Masuk</a></li>
-					<li class="nav-item"><a href="/signup" class="nav-link font-weight-bold">Daftar</a></li>
+					<li class="nav-item"><a href="/login" class="nav-link">Masuk</a></li>
+					<li class="nav-item"><a href="/signup" class="nav-link">Daftar</a></li>
 
 				</ul>
 			</div>
@@ -59,7 +59,7 @@
 			<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
 				<div class="col-md-9 text text-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 					<h1 data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Jadikan Liburan Anda Luar Biasa Bersama Kami</h1>
-					<p class="caps" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Bepergian ke berbagai tempat wisata Indonesia</p>
+					<p class="caps" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Weesantai, discover your journey.</p>
 				</div>
 			</div>
 		</div>
@@ -304,7 +304,7 @@
 					<div class="block-23 mb-3">
 						<span class="icon icon-map-marker mr-2"></span><span class="text mr-3">Jl. Batik Kumeli No.50, Sukaluyu, Kec. Cibeunying Kaler, Kota Bandung, Jawa Barat 40123</span><br>
 						<a href="#"><span class="icon icon-phone mr-2"></span><span class="text mr-3">+62 822 1234 5678</span></a>
-						<a href="#"><span class="icon icon-envelope mr-2"></span><span class="text">admin@weesantai.com</span></a>
+						<a href="#"><span class="icon icon-envelope mr-2"></span><span class="text">admin@weesantai.id</span></a>
 					</div>
 					<!-- <p> -->
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
