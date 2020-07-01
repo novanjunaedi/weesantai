@@ -11,6 +11,21 @@ class MainController extends Controller
         return view('main.index');
     }
 
+    public function destination()
+    {
+        return view('main.destination');
+    }
+
+    public function about()
+    {
+        return view('main.about');
+    }
+
+    public function contact()
+    {
+        return view('main.contact');
+    }
+
     public function login()
     {
         return view('login');
