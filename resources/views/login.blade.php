@@ -3,7 +3,7 @@
 
 @section('title', 'Login')
     
-
+<!-- Kintil -->
 @section('container')
 <body class="bg-gradient-primary">
   <div class="container">

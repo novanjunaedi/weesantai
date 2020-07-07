@@ -65,7 +65,7 @@
               </form>
               <hr>
               <div class="text-center">
-                <a class="small" href="/">Sudah punya akun? Masuk disini!</a>
+                <a class="small" href="/login">Sudah punya akun? Masuk disini!</a>
               </div>
             </div>
           </div>
