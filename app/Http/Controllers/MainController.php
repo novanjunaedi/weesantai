@@ -35,4 +35,13 @@ class MainController extends Controller
     {
         return view('register');
     }
+    public function detail_list()
+    {
+        return view('main.detail_list');
+    }
+
+    public function detail_wisata()
+    {
+        return view('main.detail_wisata');
+    }
 }

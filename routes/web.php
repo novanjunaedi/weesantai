@@ -17,6 +17,9 @@ Route::get('/login', 'MainController@login');
 Route::get('/signup', 'MainController@signup');
 Route::get('/about', 'MainController@about');
 Route::get('/contact', 'MainController@contact');
+Route::get('/detail-list', 'MainController@detail_list');
+Route::get('/detail-wisata', 'MainController@detail_wisata');
+
 
 
 Route::get('/register', function () {
