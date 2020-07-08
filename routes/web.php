@@ -18,6 +18,7 @@ Route::get('/signup', 'MainController@signup');
 Route::get('/about', 'MainController@about');
 Route::get('/contact', 'MainController@contact');
 
+
 Route::get('/register', function () {
     return view('register');
 });
@@ -29,6 +30,10 @@ Route::get('/dashboard', function () {
 Route::get('/index', function () {
     return view('main.index');
 });
+
+
+Route::get('/e-ticket', 'TicketController@index');
+Route::get('/e-ticket/pdf', 'TicketController@pdf');
 
 Route::get('/add-destination', 'DestinationController@index');
 Route::post('/add-destination/create', 'DestinationController@create');
