@@ -29,3 +29,7 @@ Route::get('/dashboard', function () {
 Route::get('/index', function () {
     return view('main.index');
 });
+
+Route::get('/add-destination', 'DestinationController@index');
+Route::post('/add-destination/create', 'DestinationController@create');
+Route::get('/add-destination/{id}/edit', 'DestinationController@edit');
