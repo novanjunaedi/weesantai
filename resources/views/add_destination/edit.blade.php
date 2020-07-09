@@ -20,7 +20,7 @@
                 </div>
             @endif
             
-            <form action="/add-destination/{{$destination->id}}/update" method="POST">
+            <form action="/add-destination/{{$destination->id}}/update" method="POST" enctype="multipart/form-data">
               {{csrf_field()}}
               <div class="form-group">
                 <label for="inputDestinationName">Nama Destinasi</label>
@@ -37,6 +37,14 @@
               <div class="form-group">
                 <label for="inputDestinationPrice">Harga</label>
                 <input name="price" type="text" class="form-control" id="inputDestinationPrice" placeholder="Masukkan harga" value="{{$destination->price}}">
+              </div>
+              <div class="form-group">
+                <label for="inputDestinationRating">Rating</label>
+                <input name="rating" type="text" class="form-control" id="inputDestinationRating" placeholder="Masukkan rating">
+              </div>
+              <div class="form-group">
+                <label for="inputDestinationImg">Image</label>
+                <input type="file" class="form-control" name="img">
               </div>
               <div class="form-group">
                 <label for="inputDestinationDesc">Deskripsi</label>

@@ -14,7 +14,12 @@ class DestinationController extends Controller
 
     public function create(Request $request)
     {
-    	\App\Destination::create($request->all());
+    	$destination = \App\Destination::create($request->all());
+    	if($request->hasfile('img')){
+    		$request->file('img')->move('images/', $request->file('img')->getClientOriginalName());
+    		$destination->img = $request->file('img')->getClientOriginalName();
+    		$destination->save();
+    	}
     	return redirect('/add-destination')->with('success', 'Destinasi baru telah berhasil ditambahkan!');
     }
 
@@ -28,6 +33,11 @@ class DestinationController extends Controller
     {
     	$destination = \App\Destination::find($id);
     	$destination->update($request->all());
+    	if($request->hasfile('img')){
+    		$request->file('img')->move('images/', $request->file('img')->getClientOriginalName());
+    		$destination->img = $request->file('img')->getClientOriginalName();
+    		$destination->save();
+    	}
     	return redirect('/add-destination')->with('success', 'Destinasi telah berhasil diubah!');
     }
 

@@ -30,17 +30,21 @@
 								<td>Alamat</td>
 								<td>Harga</td>
 								<td>Deskripsi</td>
+								<td>Rating</td>
+								<td>Image</td>
 								<td>Action</td>
 							</tr>
 						</thead>
 						<tbody>
 							@foreach($destination_data as $destination)
 							<tr>
-								<td>{{$destination->destination_name}}</td>
+								<td><a href="/destination/{{$destination->id}}/detail">{{$destination->destination_name}}</a></td>
 								<td>{{$destination->location}}</td>
 								<td style="max-width: 75px;">{{$destination->address}}</td>
 								<td>{{$destination->price}}</td>
 								<td style="max-width: 125px;">{{$destination->description}}</td>
+								<td>{{$destination->rating}}</td>
+								<td>{{$destination->img}}</td>
 								<td style="max-width: 25px;">
 									<a class="btn btn-primary btn-sm" href="/add-destination/{{$destination->id}}/edit"><i class="fas fa-fw fa-edit"></i></a>
 									<a class="btn btn-danger btn-sm" href="/add-destination/{{$destination->id}}/delete"><i class="fas fa-fw fa-trash"></i></a>
@@ -66,7 +70,7 @@
 		      </div>
 		      <div class="modal-body">
 		        
-				<form action="/add-destination/create" method="POST">
+				<form action="/add-destination/create" method="POST" enctype="multipart/form-data">
 					{{csrf_field()}}
 				  <div class="form-group">
 				    <label for="inputDestinationName">Nama Destinasi</label>
@@ -83,6 +87,14 @@
 				  <div class="form-group">
 				    <label for="inputDestinationPrice">Harga</label>
 				    <input name="price" type="text" class="form-control" id="inputDestinationPrice" placeholder="Masukkan harga">
+				  </div>
+				  <div class="form-group">
+				    <label for="inputDestinationRating">Rating</label>
+				    <input name="rating" type="text" class="form-control" id="inputDestinationRating" placeholder="Masukkan rating">
+				  </div>
+				  <div class="form-group">
+				    <label for="inputDestinationImg">Image</label>
+				    <input type="file" class="form-control" name="img">
 				  </div>
 				  <div class="form-group">
 				    <label for="inputDestinationDesc">Deskripsi</label>
