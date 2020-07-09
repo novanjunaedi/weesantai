@@ -59,9 +59,9 @@
                 <div class="form-group">
                     <input type="text" class="form-control form-control-user" id="exampleInputAddress" placeholder="Masukkan alamat Anda">
                   </div>
-                <a href="login.html" class="btn btn-primary btn-user btn-block">
+                <button type="submit" class="btn btn-primary btn-user btn-block">
                   Registrasi
-                </a>
+                </button>
               </form>
               <hr>
               <div class="text-center">
