@@ -24,6 +24,7 @@ Route::get('/dashboard', 'DashboardController@index')->middleware('auth:role', '
 Route::get('/login', 'AuthController@login')->name('login')->middleware('guest:role');
 Route::post('/login', 'AuthController@postLogin');
 Route::post('/register', 'AuthController@postRegister');
+Route::get('/register', 'AuthController@register');
 Route::get('/logout', 'AuthController@logout');
 
 Route::get('/index', function () {

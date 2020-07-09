@@ -16,13 +16,18 @@ class DestinationController extends Controller
     {
     	$destination = \App\Destination::create($request->all());
 
-        $pathimg = $request->get('location');
+		// Bikin Path untuk Image
+		$pathimg = $request->get('location');
+		$namewisata = $request->get('destination_name');
+		$newstr= preg_replace('/\s/','',$namewisata);
 
     	if($request->hasfile('img')){
-    		$request->file('img')->move('wisata_img/'.$pathimg.'/', $request->file('img')->getClientOriginalName());
+    		$request->file('img')->move('wisata_img/'.$pathimg.'/'.$newstr.'/', $request->file('img')->getClientOriginalName());
     		$destination->img = $request->file('img')->getClientOriginalName();
     		$destination->save();
-    	}
+		}
+		//
+		
     	return redirect('/add-destination')->with('success', 'Destinasi baru telah berhasil ditambahkan!');
 
     }
