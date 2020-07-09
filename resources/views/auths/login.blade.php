@@ -1,8 +1,12 @@
 @extends('layout.login.mainlogin')
 
 @section('title', 'Login')
+<<<<<<< HEAD:resources/views/auths/login.blade.php
 
 
+=======
+    
+>>>>>>> 22e31d91607b75afae290f9adca46f038355b0a3:resources/views/login.blade.php
 @section('container')
 
 <body class="bg-gradient-primary">

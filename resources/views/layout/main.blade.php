@@ -45,8 +45,8 @@
                     <li class="nav-item {{ Request::is('destination') ? 'active' : '' }}"><a href="/destination" class="nav-link">Destinasi</a></li>
                     <li class="nav-item {{ Request::is('about') ? 'active' : '' }}"><a href="/about" class="nav-link">Tentang</a></li>
                     <li class="nav-item {{ Request::is('contact') ? 'active' : '' }}"><a href="/contact" class="nav-link">Kontak</a></li>
-                    <li class="nav-item cta"><a href="/login" class="nav-link">Masuk</a></li>
-                    <li class="nav-item"><a href="/signup" class="nav-link font-weight-bold">Daftar</a></li>
+                    <li class="nav-item"><a href="/login" class="nav-link">Masuk</a></li>
+                    <li class="nav-item"><a href="/signup" class="nav-link">Daftar</a></li>
                 </ul>
             </div>
         </div>
