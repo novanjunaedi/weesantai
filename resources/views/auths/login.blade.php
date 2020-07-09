@@ -1,9 +1,14 @@
-
 @extends('layout.login.mainlogin')
 
 @section('title', 'Login')
+<<<<<<< HEAD:resources/views/auths/login.blade.php
+
+
+=======
     
+>>>>>>> 22e31d91607b75afae290f9adca46f038355b0a3:resources/views/login.blade.php
 @section('container')
+
 <body class="bg-gradient-primary">
   <div class="container">
     <!-- Outer Row -->
@@ -21,22 +26,21 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Panel Login</h1>
                   </div>
-                  <form class="user">
+                  <form class="user" method="POST" action="/login">
+                    @csrf
                     <div class="form-group">
-                      <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Masukkan alamat email Anda...">
+                      <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Masukkan alamat email Anda...">
                     </div>
                     <div class="form-group">
-                      <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Masukkan kata sandi Anda...">
+                      <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Masukkan kata sandi Anda...">
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                       <div class="custom-control custom-checkbox small">
                         <input type="checkbox" class="custom-control-input" id="customCheck">
                         <label class="custom-control-label" for="customCheck">Ingat saya!</label>
                       </div>
-                    </div>
-                    <a href="index.html" class="btn btn-primary btn-user btn-block">
-                      Masuk
-                    </a>
+                    </div> -->
+                    <button type="submit" class="btn btn-primary btn-block btn-user">Masuk</button>
                     <hr>
                   </form>
                   <div class="text-center">

@@ -13,15 +13,21 @@
 
 Route::get('/', 'MainController@index');
 Route::get('/destination', 'MainController@destination');
-Route::get('/login', 'MainController@login');
-Route::get('/signup', 'MainController@signup');
 Route::get('/about', 'MainController@about');
 Route::get('/contact', 'MainController@contact');
 Route::get('/detail-list', 'MainController@detail_list');
 Route::get('/detail-wisata', 'MainController@detail_wisata');
 
+Route::get('/dashboard', 'DashboardController@index')->middleware('auth:role', 'checkRole:admin');
 
-
+<<<<<<< HEAD
+// Auth
+Route::get('/login', 'AuthController@login')->name('login')->middleware('guest:role');
+Route::post('/login', 'AuthController@postLogin');
+Route::get('/register', 'AuthController@register');
+Route::post('/register', 'AuthController@postRegister');
+Route::get('/logout', 'AuthController@logout');
+=======
 Route::get('/register', function () {
     return view('register');
 });
@@ -43,3 +49,4 @@ Route::post('/add-destination/create', 'DestinationController@create');
 Route::get('/add-destination/{id}/edit', 'DestinationController@edit');
 Route::post('/add-destination/{id}/update', 'DestinationController@update');
 Route::get('/add-destination/{id}/delete', 'DestinationController@delete');
+>>>>>>> 22e31d91607b75afae290f9adca46f038355b0a3
