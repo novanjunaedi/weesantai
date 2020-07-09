@@ -20,8 +20,6 @@ Route::get('/detail-wisata', 'MainController@detail_wisata');
 
 Route::get('/dashboard', 'DashboardController@index')->middleware('auth:role', 'checkRole:admin');
 
-
-
 <<<<<<< HEAD
 // Auth
 Route::get('/login', 'AuthController@login')->name('login')->middleware('guest:role');
