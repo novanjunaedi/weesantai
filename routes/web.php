@@ -15,7 +15,7 @@ Route::get('/', 'MainController@index');
 Route::get('/destination', 'MainController@destination');
 Route::get('/about', 'MainController@about');
 Route::get('/contact', 'MainController@contact');
-Route::get('/detail-list', 'MainController@detail_list');
+Route::get('/detail_list', 'MainController@detail_list');
 Route::get('/detail-wisata', 'MainController@detail_wisata');
 
 Route::get('/dashboard', 'DashboardController@index')->middleware('auth:role', 'checkRole:admin');
@@ -25,13 +25,6 @@ Route::get('/login', 'AuthController@login')->name('login')->middleware('guest:r
 Route::post('/login', 'AuthController@postLogin');
 Route::post('/register', 'AuthController@postRegister');
 Route::get('/logout', 'AuthController@logout');
-Route::get('/register', function () {
-    return view('register');
-});
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
 
 Route::get('/index', function () {
     return view('main.index');
