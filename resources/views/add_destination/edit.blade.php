@@ -20,27 +20,27 @@
                 </div>
             @endif
             
-            <form action="/add-destination/create" method="POST">
+            <form action="/add-destination/{{$destination->id}}/update" method="POST">
               {{csrf_field()}}
               <div class="form-group">
                 <label for="inputDestinationName">Nama Destinasi</label>
-                <input name="destination_name" type="text" class="form-control" id="inputDestinationName" placeholder="Masukkan nama destinasi">
+                <input name="destination_name" type="text" class="form-control" id="inputDestinationName" placeholder="Masukkan nama destinasi" value="{{$destination->destination_name}}">
               </div>
               <div class="form-group">
                 <label for="inputLocation">Lokasi</label>
-                <input name="location" type="text" class="form-control" id="inputLocation" placeholder="Masukkan lokasi">
+                <input name="location" type="text" class="form-control" id="inputLocation" placeholder="Masukkan lokasi" value="{{$destination->location}}">
               </div>
               <div class="form-group">
                 <label for="inputDestinationAddress">Alamat</label>
-                <input name="address" type="text" class="form-control" id="inputDestinationAddress" placeholder="Masukkan alamat">
+                <input name="address" type="text" class="form-control" id="inputDestinationAddress" placeholder="Masukkan alamat" value="{{$destination->address}}">
               </div>
               <div class="form-group">
                 <label for="inputDestinationPrice">Harga</label>
-                <input name="price" type="text" class="form-control" id="inputDestinationPrice" placeholder="Masukkan harga">
+                <input name="price" type="text" class="form-control" id="inputDestinationPrice" placeholder="Masukkan harga" value="{{$destination->price}}">
               </div>
               <div class="form-group">
                 <label for="inputDestinationDesc">Deskripsi</label>
-                <textarea name="description" class="form-control" id="inputDestinationDesc" rows="3"></textarea>
+                <textarea name="description" class="form-control" id="inputDestinationDesc" rows="3">{{$destination->description}}</textarea>
               </div>
               <button type="submit" class="btn btn-primary">Ubah</button>
               <a class="btn btn-secondary" href="/add-destination">Kembali</a>

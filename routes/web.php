@@ -33,3 +33,5 @@ Route::get('/index', function () {
 Route::get('/add-destination', 'DestinationController@index');
 Route::post('/add-destination/create', 'DestinationController@create');
 Route::get('/add-destination/{id}/edit', 'DestinationController@edit');
+Route::post('/add-destination/{id}/update', 'DestinationController@update');
+Route::get('/add-destination/{id}/delete', 'DestinationController@delete');

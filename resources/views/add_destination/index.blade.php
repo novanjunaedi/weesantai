@@ -22,7 +22,7 @@
 				</div>
 				@endif
 				<div class="card" style="overflow-y: hidden;">
-					<table class="table table-hover">
+					<table class="table table-hover table-sm">
 						<thead>
 							<tr>
 								<td>Nama Destinasi</td>
@@ -38,12 +38,12 @@
 							<tr>
 								<td>{{$destination->destination_name}}</td>
 								<td>{{$destination->location}}</td>
-								<td>{{$destination->address}}</td>
+								<td style="max-width: 75px;">{{$destination->address}}</td>
 								<td>{{$destination->price}}</td>
-								<td>{{$destination->description}}</td>
-								<td>
-									<a class="btn btn-primary btn-sm" href="/add-destination/{{$destination->id}}/edit">Ubah</a>
-									<a class="btn btn-primary btn-sm" href="#">Hapus</a>
+								<td style="max-width: 125px;">{{$destination->description}}</td>
+								<td style="max-width: 25px;">
+									<a class="btn btn-primary btn-sm" href="/add-destination/{{$destination->id}}/edit"><i class="fas fa-fw fa-edit"></i></a>
+									<a class="btn btn-danger btn-sm" href="/add-destination/{{$destination->id}}/delete"><i class="fas fa-fw fa-trash"></i></a>
 								</td>
 							</tr>
 							@endforeach

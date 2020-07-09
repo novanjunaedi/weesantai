@@ -40,13 +40,13 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
+      <li class="nav-item mt-1">
         <a class="nav-link" href="/dashboard"><i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </a>
       </li>
 
-      <li class="nav-item">
+      <li class="nav-item mt-1">
         <a class="nav-link" href="/add-destination"><i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Tambah Destinasi</span>
         </a>
