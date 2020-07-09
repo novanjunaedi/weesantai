@@ -16,6 +16,7 @@ class DestinationController extends Controller
     {
     	\App\Destination::create($request->all());
     	return redirect('/add-destination')->with('success', 'Destinasi baru telah berhasil ditambahkan!');
+
     }
 
     public function edit($id)
