@@ -21,6 +21,7 @@ class DestinationController extends Controller
     		$destination->save();
     	}
     	return redirect('/add-destination')->with('success', 'Destinasi baru telah berhasil ditambahkan!');
+
     }
 
     public function edit($id)

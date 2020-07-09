@@ -53,7 +53,7 @@
 					<a href="#" class="img" style="background-image: url(img/city/jakarta.jpg);">
 						<div class="text">
 							<h3>Jakarta</h3>
-							<span>8 Destinasi</span>
+							<span>{{ $jakarta_count }} Destinasi</span>
 						</div>
 					</a>
 				</div>
@@ -64,7 +64,7 @@
 					<a href="#" class="img" style="background-image: url(img/city/bali.jpg);">
 						<div class="text">
 							<h3>Bali</h3>
-							<span>10 Destinasi</span>
+							<span>{{ $bali_count }} Destinasi</span>
 						</div>
 					</a>
 				</div>
@@ -74,7 +74,7 @@
 					<a href="#" class="img" style="background-image: url(img/city/bandung.jpeg);">
 						<div class="text">
 							<h3>Bandung</h3>
-							<span>7 Destinasi</span>
+							<span>{{ $bandung_count }} Destinasi</span>
 						</div>
 					</a>
 				</div>
@@ -84,7 +84,7 @@
 					<a href="#" class="img" style="background-image: url(img/city/yogyakarta.jpg);">
 						<div class="text">
 							<h3>Yogyakarta</h3>
-							<span>5 Destinasi</span>
+							<span>{{$yogyakarta_count}} Destinasi</span>
 						</div>
 					</a>
 				</div>
@@ -94,7 +94,7 @@
 					<a href="#" class="img" style="background-image: url(img/city/malang.jpg);">
 						<div class="text">
 							<h3>Malang</h3>
-							<span>9 Destinasi</span>
+							<span>{{ $malang_count}} Destinasi</span>
 						</div>
 					</a>
 				</div>
@@ -103,8 +103,8 @@
 				<div class="project-destination">
 					<a href="#" class="img" style="background-image: url(img/city/Surabaya.jpg);">
 						<div class="text">
-							<h3>Surabay</h3>
-							<span>5 Destinasi</span>
+							<h3>Surabaya</h3>
+							<span>{{$surabaya_count}} Destinasi</span>
 						</div>
 					</a>
 				</div>
@@ -114,7 +114,7 @@
 					<a href="#" class="img" style="background-image: url(img/city/lombok.jpg);">
 						<div class="text">
 							<h3>Lombok</h3>
-							<span>3 Tours</span>
+							<span>{{ $lombok_count }} Tours</span>
 						</div>
 					</a>
 				</div>
@@ -124,7 +124,7 @@
 					<a href="#" class="img" style="background-image: url(img/city/lampung.jpg);">
 						<div class="text">
 							<h3>Lampung</h3>
-							<span>4 Tours</span>
+							<span>{{$lampung_count}} Tours</span>
 						</div>
 					</a>
 				</div>
