@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/main/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/main/animate.css">
+    <link rel="stylesheet" href="css/mystyle.css">
 
     <link rel="stylesheet" href="css/main/owl.carousel.min.css">
     <link rel="stylesheet" href="css/main/owl.theme.default.min.css">
@@ -22,7 +23,7 @@
     <link rel="stylesheet" href="css/main/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/main/jquery.timepicker.css">
 
-
+    <link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/main/flaticon.css">
     <link rel="stylesheet" href="css/main/icomoon.css">
     <link rel="stylesheet" href="css/main/style.css">

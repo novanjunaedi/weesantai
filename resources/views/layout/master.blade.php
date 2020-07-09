@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Weesantai | Dashboard</title>
+  <title>Weesantai - Dashboard</title>
 
   <!-- Custom fonts for this template-->
   <link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
@@ -40,20 +40,20 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item mt-1">
-        <a class="nav-link" href="/dashboard"><i class="fas fa-fw fa-tachometer-alt"></i>
+      <li class="nav-item">
+        <a class="nav-link pb-0" href="/dashboard"><i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </a>
       </li>
 
-      <li class="nav-item mt-1">
-        <a class="nav-link" href="/add-destination"><i class="fas fa-fw fa-tachometer-alt"></i>
+      <li class="nav-item">
+        <a class="nav-link pb-0" href="/add-destination"><i class="fas fa-fw fa-map"></i>
           <span>Tambah Destinasi</span>
         </a>
       </li>
 
       <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
+      <div class="text-center d-none d-md-inline pt-3">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
 
@@ -125,7 +125,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2020</span>
+            <span>&copy; 2020. Weesantai.id - All rights reserved. Developed by Kelompok 1.</span>
           </div>
         </div>
       </footer>
