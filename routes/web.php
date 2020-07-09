@@ -10,11 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/dashboard', 'DashboardController@index')->middleware('auth:role', 'checkRole:admin');
-
-// Route::get('/', function () {
-//     return view('main.index');
-// });
 
 Route::get('/', 'MainController@index');
 Route::get('/destination', 'MainController@destination');
@@ -22,6 +17,8 @@ Route::get('/about', 'MainController@about');
 Route::get('/contact', 'MainController@contact');
 Route::get('/detail-list', 'MainController@detail_list');
 Route::get('/detail-wisata', 'MainController@detail_wisata');
+
+Route::get('/dashboard', 'DashboardController@index')->middleware('auth:role', 'checkRole:admin');
 
 
 
