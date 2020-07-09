@@ -15,8 +15,11 @@ class DestinationController extends Controller
     public function create(Request $request)
     {
     	$destination = \App\Destination::create($request->all());
+
+        $pathimg = $request->get('location');
+
     	if($request->hasfile('img')){
-    		$request->file('img')->move('images/', $request->file('img')->getClientOriginalName());
+    		$request->file('img')->move('wisata_img/'.$pathimg.'/', $request->file('img')->getClientOriginalName());
     		$destination->img = $request->file('img')->getClientOriginalName();
     		$destination->save();
     	}

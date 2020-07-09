@@ -93,7 +93,7 @@
 				    <input name="rating" type="text" class="form-control" id="inputDestinationRating" placeholder="Masukkan rating">
 				  </div>
 				  <div class="form-group">
-				    <label for="inputDestinationImg">Image</label>
+				    <label for="inputDestinationImg">Image Banner</label>
 				    <input type="file" class="form-control" name="img">
 				  </div>
 				  <div class="form-group">
