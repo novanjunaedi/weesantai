@@ -1,6 +1,5 @@
 @extends('layout.master')
 
-<<<<<<< HEAD:resources/views/auths/dashboard.blade.php
 <head>
 
   <meta charset="utf-8">
@@ -327,9 +326,7 @@
 
         </nav>
         <!-- End of Topbar -->
-=======
-@section('content')
->>>>>>> 22e31d91607b75afae290f9adca46f038355b0a3:resources/views/dashboard.blade.php
+        @section('content')
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
@@ -346,7 +343,6 @@
             </div>
           </div>
 
-<<<<<<< HEAD:resources/views/auths/dashboard.blade.php
           <!-- Content Row -->
 
           <div class="row">
@@ -595,12 +591,6 @@
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
           <a class="btn btn-primary" href="/logout">Logout</a>
-=======
->>>>>>> 22e31d91607b75afae290f9adca46f038355b0a3:resources/views/dashboard.blade.php
         </div>
 
-<<<<<<< HEAD:resources/views/auths/dashboard.blade.php
-</html>
-=======
-@endsection
->>>>>>> 22e31d91607b75afae290f9adca46f038355b0a3:resources/views/dashboard.blade.php
+        <<<<<<< HEAD:resources/views/auths/dashboard.blade.php </html>=======@endsection>>>>>>> 22e31d91607b75afae290f9adca46f038355b0a3:resources/views/dashboard.blade.php
