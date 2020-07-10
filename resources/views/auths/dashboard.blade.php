@@ -57,11 +57,35 @@
           </div>
 
           <div class="row pt-4">
-            <div class="col">
-              <h5 class="title">Transaksi Terakhir</h5>
+            <div class="col-lg-4">
+              <h5 class="title">Destinasi Terdaftar</h5>
               <div class="card">
                 <table class="table">
                   <thead class="thead-light">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Kota</th>
+                      <th scope="col">Jumlah Destinasi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Jakarta</td>
+                      <td>15</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                
+              </div>
+            </div>
+
+            <div class="col-lg-8">
+              <h5 class="title">Transaksi Terakhir</h5>
+              <div class="card">
+                <table class="table table-hover">
+                  <thead class="thead-dark">
                     <tr>
                       <th scope="col">#</th>
                       <th scope="col">First</th>
@@ -76,24 +100,17 @@
                       <td>Otto</td>
                       <td>@mdo</td>
                     </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
                   </tbody>
                 </table>
 
                 
               </div>
             </div>
+
+          </div>
+
+          <div class="row pt-4">
+            
           </div>
 
 </div>

@@ -49,7 +49,7 @@
 								<td>{{$destination->price}}</td>
 								<td style="max-width: 125px;">{{$destination->description}}</td>
 								<td>{{$destination->rating}}</td>
-								<td>{{$destination->img}}</td>
+								<td style="max-width: 50px; overflow: hidden;">{{$destination->img}}</td>
 								<td style="max-width: 25px;">
 									<a class="btn btn-primary btn-sm" href="/add-destination/{{$destination->id}}/edit"><i class="fas fa-fw fa-edit"></i></a>
 									<a class="btn btn-danger btn-sm" href="/add-destination/{{$destination->id}}/delete" onclick="return confirm('Hapus destinasi?')"><i class="fas fa-fw fa-trash"></i></a>
