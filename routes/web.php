@@ -25,13 +25,12 @@ Route::get('/detail-list/Malang', 'ListController@get_malang');
 Route::get('/detail-list/Surabaya', 'ListController@get_surabaya');
 Route::get('/detail-list/Lombok', 'ListController@get_lombok');
 Route::get('/detail-list/Lampung', 'ListController@get_lampung');
-
 Route::get('/detail-list', 'ListController@get_back');
 
 
 
 
-Route::get('/detail-wisata', 'MainController@detail_wisata');
+Route::get('/detail-wisata/{destination_name}', 'MainController@detail_wisata');
 
 Route::get('/dashboard', 'DashboardController@index')->middleware('auth:role', 'checkRole:admin');
 
@@ -58,3 +57,5 @@ Route::post('/add-destination/{id}/update', 'DestinationController@update');
 Route::get('/add-destination/{id}/delete', 'DestinationController@delete');
 
 Route::get('/user', 'UserController@index');
+
+Route::get('/transaction', 'TranscController@index');

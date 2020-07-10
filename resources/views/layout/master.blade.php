@@ -58,6 +58,12 @@
         </a>
       </li>
 
+      <li class="nav-item">
+        <a class="nav-link pb-0" href="/transaction"><i class="fas fa-fw fa-history"></i>
+          <span>History Transaction</span>
+        </a>
+      </li>
+
       <!-- Sidebar Toggler (Sidebar) -->
       <div class="text-center d-none d-md-inline pt-3">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
