@@ -19,11 +19,12 @@ class DestinationController extends Controller
 		// Bikin Path untuk Image
 		$pathimg = $request->get('location');
 		$namewisata = $request->get('destination_name');
-		$newstr= preg_replace('/\s/','',$namewisata);
+        $newstr= preg_replace('/\s/','',$namewisata);
+        $path = "wisata_img/$pathimg/$newstr/";
 
     	if($request->hasfile('img')){
     		$request->file('img')->move('wisata_img/'.$pathimg.'/'.$newstr.'/', $request->file('img')->getClientOriginalName());
-    		$destination->img = $request->file('img')->getClientOriginalName();
+    		$destination->img = $path.$request->file('img')->getClientOriginalName();
     		$destination->save();
 		}
 		//
@@ -41,10 +42,17 @@ class DestinationController extends Controller
     public function update(Request $request,$id)
     {
     	$destination = \App\Destination::find($id);
-    	$destination->update($request->all());
+        $destination->update($request->all());
+        
+		// Bikin Path untuk Image
+		$pathimg = $request->get('location');
+		$namewisata = $request->get('destination_name');
+        $newstr= preg_replace('/\s/','',$namewisata);
+        $path = "wisata_img/$pathimg/$newstr/";
+
     	if($request->hasfile('img')){
     		$request->file('img')->move('wisata_img/'.$pathimg.'/'.$newstr.'/', $request->file('img')->getClientOriginalName());
-    		$destination->img = $request->file('img')->getClientOriginalName();
+    		$destination->img = $path.$request->file('img')->getClientOriginalName();
     		$destination->save();
     	}
     	return redirect('/add-destination')->with('success', 'Destinasi telah berhasil diubah!');
