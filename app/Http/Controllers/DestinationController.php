@@ -54,6 +54,6 @@ class DestinationController extends Controller
     {
     	$destination = \App\Destination::find($id);
     	$destination->delete();
-    	return redirect('/add-destination')->with('success', 'Destinasi telah dihapus!');
+    	return redirect('/add-destination')->with('delete', 'Destinasi telah dihapus!');
     }
 }

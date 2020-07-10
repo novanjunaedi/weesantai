@@ -21,9 +21,14 @@
 				  {{session('success')}}
 				</div>
 				@endif
+				@if(session('delete'))
+	          	<div class="alert alert-danger" role="alert">
+				  {{session('delete')}}
+				</div>
+				@endif
 				<div class="card" style="overflow-y: hidden;">
-					<table class="table table-hover table-sm">
-						<thead>
+					<table class="table table-hover">
+						<thead class="thead-light">
 							<tr>
 								<td>Nama Destinasi</td>
 								<td>Lokasi</td>
@@ -47,7 +52,7 @@
 								<td>{{$destination->img}}</td>
 								<td style="max-width: 25px;">
 									<a class="btn btn-primary btn-sm" href="/add-destination/{{$destination->id}}/edit"><i class="fas fa-fw fa-edit"></i></a>
-									<a class="btn btn-danger btn-sm" href="/add-destination/{{$destination->id}}/delete"><i class="fas fa-fw fa-trash"></i></a>
+									<a class="btn btn-danger btn-sm" href="/add-destination/{{$destination->id}}/delete" onclick="return confirm('Hapus destinasi?')"><i class="fas fa-fw fa-trash"></i></a>
 								</td>
 							</tr>
 							@endforeach
