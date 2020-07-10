@@ -12,6 +12,7 @@ class MainController extends Controller
         // hitunglokasibandung
       $bandung = "Bandung";
       $bdglist = DB::table('destinations')->select('location')->where('location', $bandung)->get();
+      $bdgall = DB::table('destinations')->where('location', $bandung)->get();
       $bdgcount = $bdglist->count();
 
         // hitunglokasijakarta
@@ -58,10 +59,11 @@ class MainController extends Controller
             'malang_count' => $malangcount,
             'surabaya_count' => $surabayacount,
             'lampung_count' => $lpgcount,
-            'lombok_count' => $lbkcount
+            'lombok_count' => $lbkcount,
+            //Bandung Require
+            'bdgall' => $bdgall,
+            'bdgstr' =>$bandung
         ];
-
-        var_dump($data);
            
         return view('main.index', $data);
     }
@@ -90,10 +92,7 @@ class MainController extends Controller
     {
         return view('register');
     }
-    public function detail_list()
-    {
-        return view('main.detail_list');
-    }
+
 
     public function detail_wisata()
     {

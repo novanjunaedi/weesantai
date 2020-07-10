@@ -43,7 +43,7 @@ class DestinationController extends Controller
     	$destination = \App\Destination::find($id);
     	$destination->update($request->all());
     	if($request->hasfile('img')){
-    		$request->file('img')->move('images/', $request->file('img')->getClientOriginalName());
+    		$request->file('img')->move('wisata_img/'.$pathimg.'/'.$newstr.'/', $request->file('img')->getClientOriginalName());
     		$destination->img = $request->file('img')->getClientOriginalName();
     		$destination->save();
     	}

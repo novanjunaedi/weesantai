@@ -11,13 +11,6 @@
     <h1>Karang Setra Waterland (Bandung) </h1>
 </div>
 <div class="container">
-<<<<<<< HEAD
-    <div class="row col-xs-4 text-center">
-        <div class="col-md-12 ftco-animate mb-4">
-            <div class="banner" style="width: 1000px; height:1000px;">
-                <img class="" src="http://placehold.it/256x256">
-            </div>
-=======
     <div class="row">
         <div class="col-lg-12 ftco-animate mb-4 mt-4">
         	<div class="card shadow p-3 mb-5 bg-white rounded">
@@ -34,7 +27,6 @@
         			<a class="btn btn-warning mt-4 mb-4" href="#">Pesan Tiket Sekarang</a>
         		</div>
         	</div>
->>>>>>> ea9aa8c4894f2f010cb4a90b224d1e4000e8d06f
         </div>
     </div>
  </div>

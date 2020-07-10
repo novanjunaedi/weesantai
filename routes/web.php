@@ -15,7 +15,18 @@ Route::get('/', 'MainController@index');
 Route::get('/destination', 'MainController@destination');
 Route::get('/about', 'MainController@about');
 Route::get('/contact', 'MainController@contact');
-Route::get('/detail_list', 'MainController@detail_list');
+
+//route detail-list
+Route::get('/detail-list/Bandung', 'ListController@get_bandung');
+Route::get('/detail-list/Jakarta', 'ListController@get_jakarta');
+Route::get('/detail-list/Bali', 'ListController@get_bali');
+Route::get('/detail-list/Yogyakarta', 'ListController@get_yogyakarta');
+Route::get('/detail-list/Malang', 'ListController@get_malang');
+Route::get('/detail-list/Surabaya', 'ListController@get_surabaya');
+Route::get('/detail-list/Lombok', 'ListController@get_lombok');
+Route::get('/detail-list/Lampung', 'ListController@get_lampung');
+
+
 Route::get('/detail-wisata', 'MainController@detail_wisata');
 
 Route::get('/dashboard', 'DashboardController@index')->middleware('auth:role', 'checkRole:admin');
