@@ -9,8 +9,6 @@
   <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
   </div>
-
-<<<<<<< HEAD
           <!-- Content Row -->
           <div class="row">
             <div class="col-md-3">
@@ -97,14 +95,6 @@
               </div>
             </div>
           </div>
-=======
-  <!-- Content Row -->
-  <div class="row">
-    <div class="col">
-      <h1>Can Dieusian</h1>
-    </div>
-  </div>
->>>>>>> 0f9f2cde8f4f8937dbead9b6ad4bee31e85f7b2a
 
 </div>
 
