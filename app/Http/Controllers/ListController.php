@@ -94,4 +94,9 @@ class ListController extends Controller
         ];
         return view('main.detail_list', $data);
     }
+
+    public function get_back()
+    {
+        return redirect('/');
+    }
 }

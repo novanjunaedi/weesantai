@@ -26,6 +26,10 @@ Route::get('/detail-list/Surabaya', 'ListController@get_surabaya');
 Route::get('/detail-list/Lombok', 'ListController@get_lombok');
 Route::get('/detail-list/Lampung', 'ListController@get_lampung');
 
+Route::get('/detail-list', 'ListController@get_back');
+
+
+
 
 Route::get('/detail-wisata', 'MainController@detail_wisata');
 
