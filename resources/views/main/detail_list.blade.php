@@ -4,12 +4,16 @@
 
 @section('bg-banner', 'background-image: url("/img/main/banner.jpg");')
 
-@section('title-banner', 'Jadikan Liburan Anda Luar Biasa Bersama Kami')
+@section('title-banner', 'Temukan Tempat Favorit Anda')
 
 @section('content')
+
+<div class="title-wisata text-center" style="background-color: orange; padding: 25px;">
+    <h1>Tempat wisata di {{$loc}}</h1>
+</div>
+
 <section class="ftco-section">
     <div class="container">
-        {{-- <h1>List Wisata Di {{$bdgall->id}} </h1> --}}
         <div class="row">
             @foreach($allget as $list)
             <div class="col-lg-12 ftco-animate mb-4">
