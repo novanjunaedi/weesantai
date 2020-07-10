@@ -9,11 +9,6 @@
 @section('content')
 @foreach($destinations as $destination)
 
-<div class="title-wisata text-center" style="background-color: orange; padding: 25px;">
-
-	<h1>{{$destination->location}}</h1>
-
-</div>
 <div class="container">
 	<div class="row">
 		<div class="col-lg-12 ftco-animate mb-4 mt-4">
