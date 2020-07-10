@@ -9,7 +9,7 @@
 @section('content')
 <section class="ftco-section">
     <div class="container">
-        {{-- <h1>List Wisata Di {{$bdgall->id}} </h1> --}}
+        <h1>List Wisata Di {{$loc}} </h1>
         <div class="row">
             @foreach($allget as $list)
             <div class="col-lg-12 ftco-animate mb-4">
@@ -20,12 +20,12 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title"><a href="/detail-wisata/{{$list->id}}">{{$list->destination_name}}</a></h5>
+                                <h5 class="card-title"><a href="/detail-wisata/{{$list->destination_name}}">{{$list->destination_name}}</a></h5>
                                 <p class="card-text">
                                     Lokasi : {{$list->location}} <br />
                                     Harga Tiket : Rp. {{$list->price}} -, / orang.
                                 </p>
-                                <p class="card-text"><small class="text-muted"><a href="/detail-wisata/{{$list->id}}">Lihat selengkapnya</a></small></p>
+                                <p class="card-text"><small class="text-muted"><a href="/detail-wisata/{{$list->destination_name}}">Lihat selengkapnya</a></small></p>
                             </div>
                         </div>
                     </div>

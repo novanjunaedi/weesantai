@@ -59,9 +59,6 @@ class MainController extends Controller
       'surabaya_count' => $surabayacount,
       'lampung_count' => $lpgcount,
       'lombok_count' => $lbkcount,
-      //Bandung Require
-      'bdgall' => $bdgall,
-      'bdgstr' => $bandung
     ];
 
     return view('main.index', $data);
