@@ -43,7 +43,7 @@
 						<tbody>
 							@foreach($destination_data as $destination)
 							<tr>
-								<td><a href="/destination/{{$destination->id}}/detail">{{$destination->destination_name}}</a></td>
+								<td><a href="/detail-wisata/{{$destination->destination_name}}">{{$destination->destination_name}}</a></td>
 								<td>{{$destination->location}}</td>
 								<td style="max-width: 75px;">{{$destination->address}}</td>
 								<td>{{$destination->price}}</td>

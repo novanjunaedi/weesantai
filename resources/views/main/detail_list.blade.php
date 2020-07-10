@@ -16,7 +16,7 @@
                 <div class="card shadow p-3 mb-3 bg-white rounded">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="{{asset('wisata_img/' . $list->location . '/' . $list->destination_name . '/' . $list->img)}}" class="card-img" alt="location">
+                            <img src="{{asset($list->img)}}" class="card-img" alt="location">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                 </div>
-                @endforeach
             </div>
+            @endforeach
 </section>
 @endsection
