@@ -8,25 +8,25 @@
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/main/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/main/animate.css">
-    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="{{asset('css/main/open-iconic-bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/main/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('css/mystyle.css')}}">
 
-    <link rel="stylesheet" href="css/main/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/main/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/main/magnific-popup.css">
+    <link rel="stylesheet" href="{{asset('css/main/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/main/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/main/magnific-popup.css')}}">
 
-    <link rel="stylesheet" href="css/main/aos.css">
+    <link rel="stylesheet" href="{{asset('css/main/aos.css')}}">
 
-    <link rel="stylesheet" href="css/main/ionicons.min.css">
+    <link rel="stylesheet" href="{{asset('css/main/ionicons.min.css')}}">
 
-    <link rel="stylesheet" href="css/main/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/main/jquery.timepicker.css">
+    <link rel="stylesheet" href="{{asset('css/main/bootstrap-datepicker.css')}}">
+    <link rel="stylesheet" href="{{asset('css/main/jquery.timepicker.css')}}">
 
     <link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/main/flaticon.css">
-    <link rel="stylesheet" href="css/main/icomoon.css">
-    <link rel="stylesheet" href="css/main/style.css">
+    <link rel="stylesheet" href="{{asset('css/main/flaticon.css')}}">
+    <link rel="stylesheet" href="{{asset('css/main/icomoon.css')}}">
+    <link rel="stylesheet" href="{{asset('css/main/style.css')}}">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
                     <li class="nav-item {{ Request::is('about') ? 'active' : '' }}"><a href="/about" class="nav-link">Tentang</a></li>
                     <li class="nav-item {{ Request::is('contact') ? 'active' : '' }}"><a href="/contact" class="nav-link">Kontak</a></li>
                     <li class="nav-item"><a href="/login" class="nav-link">Masuk</a></li>
-                    <li class="nav-item"><a href="/signup" class="nav-link">Daftar</a></li>
+                    <li class="nav-item"><a href="/register" class="nav-link">Daftar</a></li>
                 </ul>
             </div>
         </div>
@@ -70,7 +70,7 @@
 
     @yield('content')
 
-    <footer class="ftco-footer bg-bottom" style="background-image: url(img/main/footer-bg.jpg);">
+    <footer class="ftco-footer bg-bottom" style="background-image: url(/img/main/footer-bg.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -99,22 +99,22 @@
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
 
 
-    <script src="js/main/jquery.min.js"></script>
-    <script src="js/main/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/main/popper.min.js"></script>
-    <script src="js/main/bootstrap.min.js"></script>
-    <script src="js/main/jquery.easing.1.3.js"></script>
-    <script src="js/main/jquery.waypoints.min.js"></script>
-    <script src="js/main/jquery.stellar.min.js"></script>
-    <script src="js/main/owl.carousel.min.js"></script>
-    <script src="js/main/jquery.magnific-popup.min.js"></script>
-    <script src="js/main/aos.js"></script>
-    <script src="js/main/jquery.animateNumber.min.js"></script>
-    <script src="js/main/bootstrap-datepicker.js"></script>
-    <script src="js/main/scrollax.min.js"></script>
+    <script src="{{asset('js/main/jquery.min.js')}}"></script>
+    <script src="{{asset('js/main/jquery-migrate-3.0.1.min.js')}}"></script>
+    <script src="{{asset('js/main/popper.min.js')}}"></script>
+    <script src="{{asset('js/main/bootstrap.min.js')}}"></script>
+    <script src="{{asset('js/main/jquery.easing.1.3.js')}}"></script>
+    <script src="{{asset('js/main/jquery.waypoints.min.js')}}"></script>
+    <script src="{{asset('js/main/jquery.stellar.min.js')}}"></script>
+    <script src="{{asset('js/main/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('js/main/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{asset('js/main/aos.js')}}"></script>
+    <script src="{{asset('js/main/jquery.animateNumber.min.js')}}"></script>
+    <script src="{{asset('js/main/bootstrap-datepicker.js')}}"></script>
+    <script src="{{asset('js/main/scrollax.min.js')}}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/main/google-map.js"></script>
-    <script src="js/main/main.js"></script>
+    <script src="{{asset('js/main/google-map.js')}}"></script>
+    <script src="{{asset('js/main/main.js')}}"></script>
 
 </body>
 

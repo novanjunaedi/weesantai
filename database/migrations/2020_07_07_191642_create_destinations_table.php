@@ -20,6 +20,8 @@ class CreateDestinationsTable extends Migration
             $table->text('address');
             $table->string('price');
             $table->string('description');
+            $table->string('rating');
+            $table->string('image');
             $table->timestamps();
         });
     }

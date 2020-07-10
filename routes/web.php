@@ -15,16 +15,28 @@ Route::get('/', 'MainController@index');
 Route::get('/destination', 'MainController@destination');
 Route::get('/about', 'MainController@about');
 Route::get('/contact', 'MainController@contact');
-Route::get('/detail_list', 'MainController@detail_list');
-Route::get('/detail-wisata', 'MainController@detail_wisata');
+
+//route detail-list
+Route::get('/detail-list/Bandung', 'ListController@get_bandung');
+Route::get('/detail-list/Jakarta', 'ListController@get_jakarta');
+Route::get('/detail-list/Bali', 'ListController@get_bali');
+Route::get('/detail-list/Yogyakarta', 'ListController@get_yogyakarta');
+Route::get('/detail-list/Malang', 'ListController@get_malang');
+Route::get('/detail-list/Surabaya', 'ListController@get_surabaya');
+Route::get('/detail-list/Lombok', 'ListController@get_lombok');
+Route::get('/detail-list/Lampung', 'ListController@get_lampung');
+
+
+Route::get('/detail-wisata/{destination_name}', 'MainController@detail_wisata');
 
 Route::get('/dashboard', 'DashboardController@index')->middleware('auth:role', 'checkRole:admin');
 
 // Auth
 Route::get('/login', 'AuthController@login')->name('login')->middleware('guest:role');
 Route::post('/login', 'AuthController@postLogin');
-Route::get('/register', 'AuthController@register');
+Route::get('/register', 'AuthController@Register');
 Route::post('/register', 'AuthController@postRegister');
+Route::get('/register', 'AuthController@register');
 Route::get('/logout', 'AuthController@logout');
 
 Route::get('/index', function () {
@@ -40,3 +52,5 @@ Route::post('/add-destination/create', 'DestinationController@create');
 Route::get('/add-destination/{id}/edit', 'DestinationController@edit');
 Route::post('/add-destination/{id}/update', 'DestinationController@update');
 Route::get('/add-destination/{id}/delete', 'DestinationController@delete');
+
+Route::get('/user', 'UserController@index');

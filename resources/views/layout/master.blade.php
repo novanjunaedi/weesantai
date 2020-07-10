@@ -52,6 +52,12 @@
         </a>
       </li>
 
+      <li class="nav-item">
+        <a class="nav-link pb-0" href="/user"><i class="fas fa-fw fa-user"></i>
+          <span>Users</span>
+        </a>
+      </li>
+
       <!-- Sidebar Toggler (Sidebar) -->
       <div class="text-center d-none d-md-inline pt-3">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
@@ -103,7 +109,7 @@
                   Activity Log
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                <a class="dropdown-item" href="/logout" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                   Logout
                 </a>

@@ -2,7 +2,7 @@
 
 @section('title', 'Portal Wisata Indonesia')
 
-@section('bg-banner', 'background-image: url("img/main/banner.jpg");')
+@section('bg-banner', 'background-image: url("/img/main/banner.jpg");')
 
 @section('title-banner', 'Jadikan Liburan Anda Luar Biasa Bersama Kami')
 
@@ -50,7 +50,7 @@
 		<div class="row">
 			<div class="col-md-3 ftco-animate mb-4">
 				<div class="project-destination">
-					<a href="#" class="img" style="background-image: url(img/city/jakarta.jpg);">
+					<a href="/detail-list/Jakarta" class="img" style="background-image: url(img/city/jakarta.jpg);">
 						<div class="text">
 							<h3>Jakarta</h3>
 							<span>{{ $jakarta_count }} Destinasi</span>
@@ -61,7 +61,7 @@
 			<div class="col-md-3 ftco-animate mb-4">
 				<div class="project-destination">
 					<div class="overlay"></div>
-					<a href="#" class="img" style="background-image: url(img/city/bali.jpg);">
+					<a href="/detail-list/Bali" class="img" style="background-image: url(img/city/bali.jpg);">
 						<div class="text">
 							<h3>Bali</h3>
 							<span>{{ $bali_count }} Destinasi</span>
@@ -71,7 +71,7 @@
 			</div>
 			<div class="col-md-3 ftco-animate mb-4">
 				<div class="project-destination">
-					<a href="#" class="img" style="background-image: url(img/city/bandung.jpeg);">
+					<a href="/detail-list/Bandung" class="img" style="background-image: url(img/city/bandung.jpeg);">
 						<div class="text">
 							<h3>Bandung</h3>
 							<span>{{ $bandung_count }} Destinasi</span>
@@ -81,7 +81,7 @@
 			</div>
 			<div class="col-md-3 ftco-animate mb-4">
 				<div class="project-destination">
-					<a href="#" class="img" style="background-image: url(img/city/yogyakarta.jpg);">
+					<a href="/detail-list/Yogyakarta" class="img" style="background-image: url(img/city/yogyakarta.jpg);">
 						<div class="text">
 							<h3>Yogyakarta</h3>
 							<span>{{$yogyakarta_count}} Destinasi</span>
@@ -91,7 +91,7 @@
 			</div>
 			<div class="col-md-3 ftco-animate mb-4">
 				<div class="project-destination">
-					<a href="#" class="img" style="background-image: url(img/city/malang.jpg);">
+					<a href="/detail-list/Malang" class="img" style="background-image: url(img/city/malang.jpg);">
 						<div class="text">
 							<h3>Malang</h3>
 							<span>{{ $malang_count}} Destinasi</span>
@@ -101,7 +101,7 @@
 			</div>
 			<div class="col-md-3 ftco-animate mb-4">
 				<div class="project-destination">
-					<a href="#" class="img" style="background-image: url(img/city/Surabaya.jpg);">
+					<a href="/detail-list/Surabaya" class="img" style="background-image: url(img/city/Surabaya.jpg);">
 						<div class="text">
 							<h3>Surabaya</h3>
 							<span>{{$surabaya_count}} Destinasi</span>
@@ -111,7 +111,7 @@
 			</div>
 			<div class="col-md-3 ftco-animate mb-4">
 				<div class="project-destination">
-					<a href="#" class="img" style="background-image: url(img/city/lombok.jpg);">
+					<a href="/detail-list/Lombok" class="img" style="background-image: url(img/city/lombok.jpg);">
 						<div class="text">
 							<h3>Lombok</h3>
 							<span>{{ $lombok_count }} Tours</span>
@@ -121,7 +121,7 @@
 			</div>
 			<div class="col-md-3 ftco-animate mb-4">
 				<div class="project-destination">
-					<a href="#" class="img" style="background-image: url(img/city/lampung.jpg);">
+					<a href="/detail-list/Lampung" class="img" style="background-image: url(img/city/lampung.jpg);">
 						<div class="text">
 							<h3>Lampung</h3>
 							<span>{{$lampung_count}} Tours</span>
