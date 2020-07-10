@@ -12,7 +12,6 @@ class MainController extends Controller
     // hitunglokasibandung
     $bandung = "Bandung";
     $bdglist = DB::table('destinations')->select('location')->where('location', $bandung)->get();
-    $bdgall = DB::table('destinations')->where('location', $bandung)->get();
     $bdgcount = $bdglist->count();
 
     // hitunglokasijakarta

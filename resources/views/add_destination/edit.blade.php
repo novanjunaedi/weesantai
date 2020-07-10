@@ -24,23 +24,23 @@
               {{csrf_field()}}
               <div class="form-group">
                 <label for="inputDestinationName">Nama Destinasi</label>
-                <input name="destination_name" type="text" class="form-control" id="inputDestinationName" placeholder="Masukkan nama destinasi" value="{{$destination->destination_name}}">
+                <input name="destination_name" type="text" class="form-control" id="inputDestinationName" placeholder="Masukkan nama destinasi" value="{{$destination->destination_name}}" required>
               </div>
               <div class="form-group">
                 <label for="inputLocation">Lokasi</label>
-                <input name="location" type="text" class="form-control" id="inputLocation" placeholder="Masukkan lokasi" value="{{$destination->location}}">
+                <input name="location" type="text" class="form-control" id="inputLocation" placeholder="Masukkan lokasi" value="{{$destination->location}}" required>
               </div>
               <div class="form-group">
                 <label for="inputDestinationAddress">Alamat</label>
-                <input name="address" type="text" class="form-control" id="inputDestinationAddress" placeholder="Masukkan alamat" value="{{$destination->address}}">
+                <input name="address" type="text" class="form-control" id="inputDestinationAddress" placeholder="Masukkan alamat" value="{{$destination->address}}" required>
               </div>
               <div class="form-group">
                 <label for="inputDestinationPrice">Harga</label>
-                <input name="price" type="text" class="form-control" id="inputDestinationPrice" placeholder="Masukkan harga" value="{{$destination->price}}">
+                <input name="price" type="text" class="form-control" id="inputDestinationPrice" placeholder="Masukkan harga" value="{{$destination->price}}" required>
               </div>
               <div class="form-group">
                 <label for="inputDestinationRating">Rating</label>
-                <input name="rating" type="text" class="form-control" id="inputDestinationRating" placeholder="Masukkan rating">
+                <input name="rating" type="text" class="form-control" id="inputDestinationRating" placeholder="Masukkan rating" value="{{$destination->rating}}" required>
               </div>
               <div class="form-group">
                 <label for="inputDestinationImg">Image</label>
@@ -48,7 +48,7 @@
               </div>
               <div class="form-group">
                 <label for="inputDestinationDesc">Deskripsi</label>
-                <textarea name="description" class="form-control" id="inputDestinationDesc" rows="3">{{$destination->description}}</textarea>
+                <textarea name="description" class="form-control" id="inputDestinationDesc" rows="3" required>{{$destination->description}}</textarea>
               </div>
               <button type="submit" class="btn btn-primary">Ubah</button>
               <a class="btn btn-secondary" href="/add-destination">Kembali</a>
