@@ -82,9 +82,17 @@
 				    <input name="destination_name" type="text" class="form-control" id="inputDestinationName" placeholder="Masukkan nama destinasi">
 				  </div>
 				  <div class="form-group">
-				    <label for="inputLocation">Lokasi</label>
-				    <input name="location" type="text" class="form-control" id="inputLocation" placeholder="Masukkan lokasi">
-				  </div>
+				<label for="selectLocation">Lokasi</label>
+				<select name="location" class="form-control" id="selectLocation">
+				  <option value="Jakarta">Jakarta</option>
+				  <option value="Bali">Bali</option>
+				  <option value="Bandung">Bandung</option>
+				  <option value="Yogyakarta">Yogyakarta</option>
+				  <option value="Malang">Malang</option>
+				  <option value="Surabaya">Surabaya</option>
+				  <option value="Lombok">Lombok</option>
+				  <option value="Lampung">Lampung</option>
+				</select>
 				  <div class="form-group">
 				    <label for="inputDestinationAddress">Alamat</label>
 				    <input name="address" type="text" class="form-control" id="inputDestinationAddress" placeholder="Masukkan alamat">
