@@ -11,4 +11,9 @@ class UserController extends Controller
     	$user_data = \App\User::all();
     	return view('user.index', ['user_data' => $user_data]);
     }
+
+    public function userprofile()
+    {
+    	return view('user.userprofile');
+    }
 }

@@ -50,9 +50,12 @@ Route::middleware(['auth:role', 'checkRole:admin'])->group(function () {
     Route::post('/add-destination/{id}/update', 'DestinationController@update');
     Route::get('/add-destination/{id}/delete', 'DestinationController@delete');
     Route::get('/transaction/{id}/delete', 'TranscController@delete');
+
+    Route::get('/user', 'UserController@index');
 });
 
 Route::middleware(['auth:role', 'checkRole:user,admin'])->group(function () {
-    Route::get('/user', 'UserController@index');
+    Route::get('/user/{id}/profile', 'UserController@userprofile');
+    //Route::get('/user/{id}/profile', 'UserController@adminprofile');
     Route::get('/transaction', 'TranscController@index');
 });
