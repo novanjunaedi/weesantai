@@ -21,7 +21,7 @@ class CreateDestinationsTable extends Migration
             $table->string('price');
             $table->string('description');
             $table->string('rating');
-            $table->string('image');
+            $table->string('img');
             $table->timestamps();
         });
     }
