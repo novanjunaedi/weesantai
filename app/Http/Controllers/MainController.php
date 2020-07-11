@@ -93,8 +93,21 @@ class MainController extends Controller
   public function detail_wisata($destination_name)
   {
     $destinationName = \App\Destination::where('destination_name', $destination_name)->get();
+
+    $s_name = auth()->user()->name;
+    $s_email = auth()->user()->email;
+
+    date_default_timezone_set("Asia/Bangkok");
+    $gettime=date("h:i:s d-m-y");
+    $valid_until = date("h:i:s d-m-y", strtotime('+24 hours'));
+    
+
     $data = [
       'destinations' => $destinationName,
+      's_name' => $s_name,
+      's_email' => $s_email,
+      'timenow' => $gettime,
+      'valid_until' => $valid_until
     ];
 
     return view('main.detail_wisata', $data);
