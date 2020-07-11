@@ -21,6 +21,15 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Panel Login</h1>
                   </div>
+                  @if (session('statusLogin'))
+                  <div class="alert alert-danger">
+                    {{ session('statusLogin') }}
+                  </div>
+                  @elseif (session('statusRegist'))
+                  <div class="alert alert-success">
+                    {{ session('statusRegist') }}
+                  </div>
+                  @endif
                   <form class="user" method="POST" action="/login">
                     @csrf
                     <div class="form-group">

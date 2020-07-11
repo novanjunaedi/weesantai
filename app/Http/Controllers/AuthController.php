@@ -19,7 +19,7 @@ class AuthController extends Controller
             return redirect('/dashboard');
         }
 
-        return redirect('/login');
+        return redirect('/login')->with('statusLogin', 'Email atau Kata Sandi Salah!');
     }
 
     public function logout()
@@ -35,6 +35,14 @@ class AuthController extends Controller
 
     public function postRegister(Request $request)
     {
+        $request->validate([
+            'name' => 'required|max:50',
+            'email' => 'required|unique:users',
+            'password' => 'required|min:8',
+            'retype_password' => 'required|same:password',
+
+        ]);
+
         $role = new \App\Role;
         $role->role = 'user';
         $role->name = $request->name;
@@ -44,6 +52,6 @@ class AuthController extends Controller
 
         $request->request->add(['user_id' => $role->id]);
         User::create($request->all());
-        return redirect('/login');
+        return redirect('/login')->with('statusRegist', 'Registrasi Berhasil, Silahkan Masuk!');
     }
 }

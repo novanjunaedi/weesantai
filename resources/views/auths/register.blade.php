@@ -15,13 +15,22 @@
               <div class="text-center">
                 <h1 class="h4 text-gray-900 mb-4">Registrasi Akun</h1>
               </div>
+              @if ($errors->any())
+              <div class="alert alert-danger">
+                <ul>
+                  @foreach ($errors->all() as $error)
+                  <li>{{ $error }}</li>
+                  @endforeach
+                </ul>
+              </div>
+              @endif
               <form class="user" action="/register" method="POST">
                 @csrf
                 <div class="form-group">
-                  <input type="text" name="name" class="form-control form-control-user" placeholder="Nama Lengkap">
+                  <input type="text" name="name" class="form-control form-control-user" placeholder="Nama Lengkap" value="{{ old('name') }}">
                 </div>
                 <div class="form-group">
-                  <input type="email" name="email" class="form-control form-control-user" placeholder="Email">
+                  <input type="email" name="email" class="form-control form-control-user" placeholder="Email" value="{{ old('email') }}">
                 </div>
                 <!-- Jenis kelamin :
                 <div class="row">
@@ -44,7 +53,10 @@
                 </div> -->
 
                 <div class="form-group">
-                  <input type="password" name="password" class="form-control form-control-user" placeholder="Kata Sandi">
+                  <input type="password" name="password" class="form-control form-control-user" placeholder="Kata Sandi" value="{{ old('password') }}">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="retype_password" class="form-control form-control-user" placeholder="Ulangi Kata Sandi" value="{{ old('password') }}">
                 </div>
                 <button type="submit" class="btn btn-warning btn-user btn-block">
                   Registrasi
@@ -60,7 +72,7 @@
       </div>
     </div>
     <div class="my-5" style="text-align: center;">
-          <a href="/">Kembali ke homepage</a>
-        </div>
+      <a href="/">Kembali ke homepage</a>
+    </div>
   </div>
   @endsection
