@@ -42,8 +42,8 @@ Route::middleware(['auth:role', 'checkRole:user,admin'])->group(function () {
     Route::get('/e-ticket/pdf', 'TicketController@pdf');
 });
 
-Route::get('/dashboard', 'DashboardController@index');
 Route::middleware(['auth:role', 'checkRole:admin'])->group(function () {
+    Route::get('/dashboard', 'DashboardController@index');
     Route::get('/add-destination', 'DestinationController@index');
     Route::post('/add-destination/create', 'DestinationController@create');
     Route::get('/add-destination/{id}/edit', 'DestinationController@edit');
