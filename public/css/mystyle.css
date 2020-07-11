@@ -10,3 +10,12 @@
 		height:auto;
 	}	
 }
+
+.dropdown.no-arrow .dropdown-toggle::after {
+	display: none;
+}
+
+.nav-item .nav-link .img-profile {
+	height: 1.9rem;
+	width: 1.9rem;
+}
