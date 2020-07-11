@@ -26,7 +26,7 @@ Route::get('/detail-list/Lombok', 'ListController@get_lombok');
 Route::get('/detail-list/Lampung', 'ListController@get_lampung');
 Route::get('/detail-list', 'ListController@get_back');
 Route::get('/detail-wisata/{destination_name}', 'MainController@detail_wisata');
-
+Route::post('/payment', 'TranscController@payment');
 // Auth
 Route::middleware(['guest:role'])->group(function () {
     Route::get('/login', 'AuthController@login')->name('login')->middleware('guest:role');
@@ -49,6 +49,7 @@ Route::middleware(['auth:role', 'checkRole:admin'])->group(function () {
     Route::get('/add-destination/{id}/edit', 'DestinationController@edit');
     Route::post('/add-destination/{id}/update', 'DestinationController@update');
     Route::get('/add-destination/{id}/delete', 'DestinationController@delete');
+    Route::get('/transaction/{id}/delete', 'TranscController@delete');
 });
 
 Route::middleware(['auth:role', 'checkRole:user,admin'])->group(function () {
