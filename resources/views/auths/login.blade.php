@@ -4,19 +4,19 @@
 
 @section('container')
 
-<body class="bg-gradient-primary">
+<body class="bg-login-register">
   <div class="container">
     <!-- Outer Row -->
     <div class="row justify-content-center">
 
-      <div class="col-xl-10 col-lg-12 col-md-9">
+      <div class="col-xl-12 col-lg-12 col-md-9">
 
         <div class="card o-hidden border-0 shadow-lg my-5">
           <div class="card-body p-0">
             <!-- Nested Row within Card Body -->
             <div class="row">
-              <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
-              <div class="col-lg-6">
+              <div class="col-lg-7 d-none d-lg-block bg-login-image"></div>
+              <div class="col-lg-5">
                 <div class="p-5">
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Panel Login</h1>
@@ -35,7 +35,7 @@
                         <label class="custom-control-label" for="customCheck">Ingat saya!</label>
                       </div>
                     </div> -->
-                    <button type="submit" class="btn btn-primary btn-block btn-user">Masuk</button>
+                    <button type="submit" class="btn btn-warning btn-block btn-user">Masuk</button>
                     <hr>
                   </form>
                   <div class="text-center">
@@ -48,6 +48,9 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="my-5" style="text-align: center;">
+          <a href="/">Kembali ke homepage</a>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 .bg-register-image {
-    background: url(../../img/logo.jpeg);
+    background: url(../../img/bg_register.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }

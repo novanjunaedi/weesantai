@@ -1,5 +1,13 @@
 .bg-login-image {
-    background: url(../../img/logo.jpeg);
+    background: url(../../img/bg_login.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-login-register {
+	background: url(../../img/bali_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
