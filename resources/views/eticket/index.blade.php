@@ -20,22 +20,21 @@
 
     <div class="row" style="margin-left: 5px; padding:5px;">
         <div class="col col-md-offset-1 col-xs-6">
-
             <table>
             <tr>
                 <td>Nomor Ticket</td>
                 <td>:</td>
-                <td>autogenerate</td>
+                <td>{{ $last->id }}</td>
             </tr>
             <tr>
                 <td>Lokasi</td>
                 <td>:</td>
-                <td>autogenerate</td>
+                <td>{{ $last->destination_name }}</td>
             </tr>
             <tr>
                 <td>Nama Pemesan</td>
                 <td>:</td>
-                <td>autogenerate</td>
+                <td>{{ $last->name }}</td>
             </tr>
             </table>
     </div>
@@ -44,17 +43,16 @@
             <tr>
                 <td>Tanggal Pembelian</td>
                 <td>:</td>
-                <td>autogenerate</td>
+                <td>{{ $last->buy_date }}</td>
             </tr>
             <tr>
                 <td>Valid Hingga Tanggal</td>
                 <td>:</td>
-                <td>autogenerate</td>
+                <td>{{ $last->valid_until }}</td>
             </tr>
             </table>
     </div>
 </div>
-
     <div class="row" style="margin-left: 5px;">
 
         <div class="col ml-5 mt-5 mr-3">
