@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use Auth;
 
 class MainController extends Controller
 {
@@ -94,8 +95,9 @@ class MainController extends Controller
   {
     $destinationName = \App\Destination::where('destination_name', $destination_name)->get();
 
-    $s_name = auth()->user()->name;
-    $s_email = auth()->user()->email;
+    $query = Auth::guard('role')->user();
+    $s_name = $query->name;
+    $s_email = $query->email;
 
     date_default_timezone_set("Asia/Bangkok");
     $gettime=date("h:i:s d-m-y");

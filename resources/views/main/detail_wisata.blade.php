@@ -29,7 +29,7 @@
 					<h1 class="card-title">{{$destination->destination_name}}</h1>
 					<h5><i class="fas fa-fw fa-map-marker"></i> {{$destination->location}}  <i class="fas fa-fw fa-star"></i> {{$destination->rating}} </h5>
 					<center>
-						<img class="thumb-img" src="{{asset($destination->img)}}" alt="gambar">
+						<img class="thumb-img" src="{{asset($destination->img)}}" alt="gambar" width="800px" height="300px">
 					</center>
 					<h5 class="card-content mt-4">Deskripsi</h5>
 					<p>{{$destination->description}}</p>
