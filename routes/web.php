@@ -56,6 +56,7 @@ Route::middleware(['auth:role', 'checkRole:admin'])->group(function () {
 
 Route::middleware(['auth:role', 'checkRole:user,admin'])->group(function () {
     Route::get('/user/{id}/profile', 'UserController@userprofile');
-    //Route::get('/user/{id}/profile', 'UserController@adminprofile');
+    Route::get('/user/{id}/edit', 'UserController@edit');
+    Route::post('/user/{id}/update', 'UserController@update');
     Route::get('/transaction', 'TranscController@index');
 });
