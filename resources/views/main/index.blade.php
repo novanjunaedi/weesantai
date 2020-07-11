@@ -12,21 +12,22 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="search-wrap-1 ftco-animate p-4">
-					<form action="#" class="search-property-1">
+					<form action="/search-destination" method="GET" class="search-property-1">
+						@csrf
 						<div class="row">
 							<div class="col-lg-10 align-items-end">
 								<div class="form-group">
-									<label for="#">Cari Tempat Wisata</label>
+									<label for="search">Cari Tempat Wisata</label>
 									<div class="form-field">
 										<div class="icon"><span class="ion-ios-search"></span></div>
-										<input type="text" class="form-control" placeholder="Masukkan Destinasi">
+										<input type="text" name="search" class="form-control" placeholder="Masukkan Destinasi">
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-2 align-self-end">
 								<div class="form-group">
 									<div class="form-field">
-										<input type="submit" value="Cari" class="form-control btn btn-primary">
+										<button type="submit" class="form-control btn btn-primary">Cari</button>
 									</div>
 								</div>
 							</div>

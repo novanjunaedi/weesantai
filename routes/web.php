@@ -14,6 +14,7 @@ Route::get('/', 'MainController@index');
 Route::get('/destination', 'MainController@destination');
 Route::get('/about', 'MainController@about');
 Route::get('/contact', 'MainController@contact');
+Route::get('/search-destination', 'MainController@searchDestination');
 
 //route detail-list
 Route::get('/detail-list/Bandung', 'ListController@get_bandung');

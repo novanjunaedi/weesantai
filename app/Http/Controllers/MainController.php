@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Destination;
 use Illuminate\Http\Request;
 use DB;
 use Auth;
@@ -93,16 +94,16 @@ class MainController extends Controller
 
   public function detail_wisata($destination_name)
   {
-    $destinationName = \App\Destination::where('destination_name', $destination_name)->get();
+    $destinationName = Destination::where('destination_name', $destination_name)->get();
 
     $query = Auth::guard('role')->user();
     $s_name = $query->name;
     $s_email = $query->email;
 
     date_default_timezone_set("Asia/Bangkok");
-    $gettime=date("h:i:s d-m-y");
+    $gettime = date("h:i:s d-m-y");
     $valid_until = date("h:i:s d-m-y", strtotime('+24 hours'));
-    
+
 
     $data = [
       'destinations' => $destinationName,
@@ -113,5 +114,16 @@ class MainController extends Controller
     ];
 
     return view('main.detail_wisata', $data);
+  }
+
+  public function searchDestination(Request $request)
+  {
+    $value = $request->search;
+    $allget = Destination::where('destination_name', 'like', "%" . $value . "%")->get();
+    $data = [
+      'allget' => $allget,
+      'value' => $value,
+    ];
+    return view('main.search_destination', $data);
   }
 }
