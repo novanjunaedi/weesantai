@@ -17,7 +17,7 @@
                   User Terdaftar
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title" style="font-size: 30px; text-align: right;">30</h5>
+                  <h5 class="card-title" style="font-size: 30px; text-align: right;">{{$jumlah_user}}</h5>
                 </div>
               </div>
             </div>
@@ -39,7 +39,7 @@
                   Destinasi
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title" style="font-size: 30px; text-align: right;">23</h5>
+                <h5 class="card-title" style="font-size: 30px; text-align: right;">{{$jumlah_destination}}</h5>
                 </div>
               </div>
             </div>
@@ -50,7 +50,7 @@
                   Transaksi Berhasil
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title" style="font-size: 30px; text-align: right;">15</h5>
+                  <h5 class="card-title" style="font-size: 30px; text-align: right;">{{$jumlah_transaction}}</h5>
                 </div>
               </div>
             </div>
@@ -72,7 +72,42 @@
                     <tr>
                       <th scope="row">1</th>
                       <td>Jakarta</td>
-                      <td>15</td>
+                      <td>{{$jakarta_count}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Bali</td>
+                      <td>{{$bali_count}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Bandung</td>
+                      <td>{{$bandung_count}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Yogyakarta</td>
+                      <td>{{$yogyakarta_count}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Malang</td>
+                      <td>{{$malang_count}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>Surabaya</td>
+                      <td>{{$surabaya_count}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td>Lombok</td>
+                      <td>{{$lombok_count}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">8</th>
+                      <td>Lampung</td>
+                      <td>{{$lampung_count}}</td>
                     </tr>
                   </tbody>
                 </table>

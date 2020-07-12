@@ -16,7 +16,7 @@
 	          	<div class="alert alert-success" role="alert">
 				  {{session('success')}}
 				</div> <br>
-				<a class="btn btn-warning mt-4 mb-4"  href="/e-ticket">Print Your E-Ticket</a>
+				<a class="btn btn-warning mt-4 mb-4"  href="/e-ticket/pdf">Print Your E-Ticket</a>
 				@endif
 				@if(session('delete'))
 	          	<div class="alert alert-danger" role="alert">
