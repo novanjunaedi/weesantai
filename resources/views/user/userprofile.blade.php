@@ -16,7 +16,6 @@
 		color: orange;
 	}
 </style>
-
 <section class="ftco-section">
 	<div class="container">
 		<div class="row">
