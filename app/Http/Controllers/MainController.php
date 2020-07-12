@@ -52,6 +52,12 @@ class MainController extends Controller
     $lbkcount = $lbklist->count();
 
 
+
+    #destinasi populer
+    $populer = DB::table('destinations')->get()->sortByDesc('rating');
+  
+
+
     $data = [
       'bandung_count'  => $bdgcount,
       'jakarta_count'   => $jktcount,
@@ -61,6 +67,7 @@ class MainController extends Controller
       'surabaya_count' => $surabayacount,
       'lampung_count' => $lpgcount,
       'lombok_count' => $lbkcount,
+      'populer' => $populer
     ];
 
     return view('main.index', $data);
