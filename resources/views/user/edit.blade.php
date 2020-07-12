@@ -20,7 +20,7 @@
 		                </div>
 		            @endif
 		            <div class="container p-5">
-		            	<form action="/user/{{$user_id}}/update" method="POST" enctype="multipart/form-data">
+		            	<form action="/user/{{$user_data->id}}/update" method="POST" enctype="multipart/form-data">
 			              {{csrf_field()}}
 			              <div class="form-group">
 			              	<div class="row">
