@@ -5,9 +5,6 @@
 @section('container')
 <div class="container">
     <div class="row ">
-        <div class="col mt-5 ml-5">
-            <a class="btn btn-danger" href="{{ url('e-ticket/pdf') }}"> Print Into PDF</a>
-        </div>
     </div>
     <div class="col-sm">
         <div class="kolom" style="background-color:white; width:auto; height:480px; margin:auto; margin-top:20px; margin-bottom: 20px; box-shadow: 3px 3px 5px 6px #ccc; ">

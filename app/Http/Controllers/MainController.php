@@ -56,7 +56,8 @@ class MainController extends Controller
     #destinasi populer
     $populer = DB::table('destinations')->get()->sortByDesc('rating');
 
-
+    $user = Auth::guard('role')->user();
+    
     //ambil gambar profile untuk navbar
 
     $data = [
@@ -70,6 +71,7 @@ class MainController extends Controller
       'lombok_count' => $lbkcount,
       'populer' => $populer,
     ];
+
 
     return view('main.index', $data);
   }
