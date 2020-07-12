@@ -58,10 +58,6 @@ class MainController extends Controller
 
 
     //ambil gambar profile untuk navbar
-    $user_data = \App\User::find($id);
-    $user_data->update($request->all());
-  
-
 
     $data = [
       'bandung_count'  => $bdgcount,
@@ -73,7 +69,6 @@ class MainController extends Controller
       'lampung_count' => $lpgcount,
       'lombok_count' => $lbkcount,
       'populer' => $populer,
-      'user_data' => $user_data
     ];
 
     return view('main.index', $data);
