@@ -22,7 +22,6 @@ class TranscController extends Controller
     public function payment(Request $request)
     {
       $destination = \App\Transaction::create($request->all());
-    
       return redirect()->back()->with('success', 'Sukses Membeli Tiket Klik Button dibawah untuk mencetak tiket');
   
     }

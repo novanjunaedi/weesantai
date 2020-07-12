@@ -55,6 +55,11 @@ class MainController extends Controller
 
     #destinasi populer
     $populer = DB::table('destinations')->get()->sortByDesc('rating');
+
+
+    //ambil gambar profile untuk navbar
+    $user_data = \App\User::find($id);
+    $user_data->update($request->all());
   
 
 
@@ -67,7 +72,8 @@ class MainController extends Controller
       'surabaya_count' => $surabayacount,
       'lampung_count' => $lpgcount,
       'lombok_count' => $lbkcount,
-      'populer' => $populer
+      'populer' => $populer,
+      'user_data' => $user_data
     ];
 
     return view('main.index', $data);
