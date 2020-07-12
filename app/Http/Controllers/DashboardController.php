@@ -60,6 +60,9 @@ class DashboardController extends Controller
     $lombok = "Lombok";
     $lbklist = DB::table('destinations')->select('location')->where('location', $lombok)->get();
     $lbkcount = $lbklist->count();
+
+
+    $trans_data = \App\Transaction::all();
         
         $data = 
         [
@@ -73,9 +76,15 @@ class DashboardController extends Controller
             'malang_count' => $malangcount,
             'surabaya_count' => $surabayacount,
             'lampung_count' => $lpgcount,
-            'lombok_count' => $lbkcount
+            'lombok_count' => $lbkcount,
+            'transaction' => $trans_data
 
         ];
+
+
+
+
+
         return view('auths.dashboard', $data);
     }
 }
