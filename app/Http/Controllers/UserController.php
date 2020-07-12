@@ -11,6 +11,8 @@ class UserController extends Controller
 	public function userprofile($id)
 	{
 		$user_data = \App\User::find($id);
+		$transactions = \App\Transaction::where('name', $user_data->name)->get();
+		$destinations = \App\Destination::all();
 
 		$query = Auth::guard('role')->user();
 		$s_id = $query->id;
@@ -31,8 +33,9 @@ class UserController extends Controller
 			'user_gender' => $s_gender,
 			'user_img' => $s_img,
 			'user_phone' => $s_phone,
-			'user_address' => $s_address
-
+			'user_address' => $s_address,
+			'transactions' => $transactions,
+			'destinations' => $destinations,
 		];
 
 		return view('user.userprofile', $data);

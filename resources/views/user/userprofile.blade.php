@@ -68,77 +68,40 @@
 						<h5 class="card-text pt-3">
 							Histori Transaksi
 						</h5>
+						@if(!$transactions->isEmpty())
+						@foreach($transactions as $transaction)
 						<div class="row">
 							<div class="col">
 								<div class="card">
-									<p class="card-title p-3">Taman Mini Indonesia Indah</p>
+									<p class="card-title p-3">{{ $transaction->destination_name }}</p>
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col">
-								<div class="card">
-									<p class="card-title p-3">Taman Mini Indonesia Indah</p>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<div class="card">
-									<p class="card-title p-3">Taman Mini Indonesia Indah</p>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<div class="card">
-									<p class="card-title p-3">Taman Mini Indonesia Indah</p>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<div class="card">
-									<p class="card-title p-3">Taman Mini Indonesia Indah</p>
-								</div>
-							</div>
-						</div>
+						@endforeach
+						@else
+						<span>Belum Ada Transaksi</span>
+						@endif
 
 						<h5 class="card-text pt-4">
 							Rekomendasi Untuk Anda
 							<div class="row pt-4">
+								@foreach($destinations as $destination)
 								<div class="col-md-6 ftco-animate">
 									<div class="project-wrap">
 										<a href="#" class="img" style="background-image: url({{asset($user_data->img)}});"></a>
 										<div class="text p-4">
-											<span class="price">Rp. harga</span>
+											<span class="price">{{ $destination->price }}</span>
 											<span class="pt-3">
-												<a href="#">lokasi</a>
+												<a href="#">{{ $destination->location }}</a>
 											</span>
 											<p class="card-text pt-3">
-												<i class="fas fa-fw fa-map-marker"></i>alamat
+												<i class="fas fa-fw fa-map-marker"></i>{{ $destination->address}}
 											</p>
 											<p style="text-align: right;"><a class="card-link" href="#">Detail</a></p>
 										</div>
 									</div>
 								</div>
-
-								<div class="col-md-6 ftco-animate">
-									<div class="project-wrap">
-										<a href="#" class="img" style="background-image: url({{asset($user_data->img)}});"></a>
-										<div class="text p-4">
-											<span class="price">Rp. harga</span>
-											<span class="pt-3">
-												<a href="#">lokasi</a>
-											</span>
-											<p class="card-text pt-3">
-												<i class="fas fa-fw fa-map-marker"></i>alamat
-											</p>
-											<p style="text-align: right;"><a class="card-link" href="#">Detail</a></p>
-										</div>
-									</div>
-								</div>
-
+								@endforeach
 							</div>
 						</h5>
 					</div>
