@@ -40,7 +40,7 @@
 @endsection
 
 @section('content')
-<section class="ftco-section">
+<section class="ftco-section" id="destination">
 	<div class="container">
 		<div class="row justify-content-center pb-4">
 			<div class="col-md-12 heading-section text-center ftco-animate">
@@ -133,7 +133,7 @@
 	</div>
 </section>
 
-<section class="ftco-section ftco-no-pt">
+<section class="ftco-section ftco-no-pt" id="popular">
 	<div class="container">
 		<div class="row justify-content-center pb-4">
 			<div class="col-md-12 heading-section text-center ftco-animate">

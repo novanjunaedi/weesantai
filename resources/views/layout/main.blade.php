@@ -44,7 +44,8 @@
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item {{ Request::is('/') ? 'active' : '' }}"><a href="/" class="nav-link">Beranda</a></li>
-                    <li class="nav-item {{ Request::is('destination') ? 'active' : '' }}"><a href="/#destinasi" class="nav-link">Destinasi</a></li>
+                    <li class="nav-item {{ Request::is('destination') ? 'active' : '' }}"><a href="/#destination" class="nav-link">Kota Wisata</a></li>
+                    <li class="nav-item {{ Request::is('destination') ? 'active' : '' }}"><a href="/#popular" class="nav-link">Destinasi Populer</a></li>
                     <li class="nav-item {{ Request::is('about') ? 'active' : '' }}"><a href="/about" class="nav-link">Tentang</a></li>
                     <li class="nav-item {{ Request::is('contact') ? 'active' : '' }}"><a href="/contact" class="nav-link">Kontak</a></li>
                     @php $user = Auth::guard('role')->user() @endphp
