@@ -22,13 +22,10 @@
         	<div class="col-lg-4 mb-2">
         		<div class="card shadow p-3 mb-5 bg-white rounded">
 					@if ($user_data->img == null )
-					<img src="{{ asset('profile_default/default-pria.png') }}" height="300px" class="card-img-top p-3 img-fluid" alt="profile">
+					<img src="{{ asset('profile_default/default-pria.png') }}" class="card-img-top p-3 img-fluid img-profile rounded-circle" alt="profile">
 					@else
-<<<<<<< HEAD
 				  	<img src="{{ asset('user_img/'.$user_data->img) }}" class="card-img-top p-3 img-fluid img-profile rounded-circle" alt="profile">
-=======
 				  	<img src="{{asset($user_data->img)}}" class="card-img-top p-3 img-fluid" alt="profile">
->>>>>>> e31d16c97bd0d1a47f88039c1ecb0bf4743c37c1
 				  	@endif
 				  <div class="card-body">
 				    <h5 class="card-title">{{$user_data->name}}</h5>
