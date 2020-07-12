@@ -138,7 +138,7 @@
                     <th scope="row">{{$count + 1}}</th>
                       <td>{{$tr->name}}</td>
                       <td>{{$tr->destination_name}}</td>
-                      <td>{{$tr->buy_at}}</td>
+                      <td>{{$tr->buy_date}}</td>
                     </tr>
                     
                     <?php $count++; ?>
