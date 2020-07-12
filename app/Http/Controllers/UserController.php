@@ -7,11 +7,6 @@ use Auth;
 
 class UserController extends Controller
 {
-    public function index() 
-    {
-    	$user_data = \App\User::all();
-    	return view('user.index', ['user_data' => $user_data]);
-    }
 
     public function userprofile($id)
     {

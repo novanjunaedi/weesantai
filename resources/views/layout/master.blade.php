@@ -54,7 +54,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link pb-0" href="/user"><i class="fas fa-fw fa-user"></i>
+        <a class="nav-link pb-0" href="/user-admin"><i class="fas fa-fw fa-user"></i>
           <span>Users</span>
         </a>
       </li>

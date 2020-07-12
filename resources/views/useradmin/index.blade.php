@@ -36,7 +36,7 @@
 								<td>{{$user->name}}</td>
 								<td>{{$user->email}}</td>
 								<td style="max-width: 25px;">
-									<a class="btn btn-primary btn-sm" href="/add-user/{{$user->id}}/edit"><i class="fas fa-fw fa-edit"></i></a>
+									{{-- <a class="btn btn-primary btn-sm" href="/add-user/{{$user->id}}/edit"><i class="fas fa-fw fa-edit"></i></a> --}}
 									<a class="btn btn-danger btn-sm" href="/add-user/{{$user->id}}/delete"><i class="fas fa-fw fa-trash"></i></a>
 								</td>
 							</tr>
