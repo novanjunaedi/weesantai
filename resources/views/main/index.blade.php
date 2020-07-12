@@ -143,12 +143,17 @@
 		<div class="row">
 			@foreach($populer as $pp)
 			<div class="col-md-4 ftco-animate">
-				<div class="project-wrap">
+				<div class="project-wrap shadow mb-5 bg-white rounded">
 					<a href="/detail-wisata/{{$pp->destination_name}}" class="img" style="background-image: url({{asset($pp->img)}});"></a>
 					<div class="text p-4">
-						<span class="price">Rp. {{$pp->price}}</span>
-						<span><a href="#">{{$pp->address}}</a></span>
-						<p class="location"><span class="ion-ios-map"></span> {{$pp->location}}</p>
+						<span class="price">Rp.{{$pp->price}}</span>
+						<span class="pt-3">
+							<a href="#">{{$pp->location}}</a>
+						</span>
+						<p class="card-text pt-3">
+							<i class="fas fa-fw fa-map-marker"></i>{{$pp->address}}
+						</p>
+						<p style="text-align: right;"><a class="card-link" href="/detail-wisata/{{$pp->destination_name}}">Detail</a></p>
 					</div>
 				</div>
 			</div>
