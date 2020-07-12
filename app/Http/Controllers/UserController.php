@@ -53,6 +53,9 @@ class UserController extends Controller
 		$s_email = $query->email;
 		$s_dob = $query->dateofbirth;
 		$s_gender = $query->gender;
+		if ($s_phone == null) {
+			$s_phone = "belum diisi";
+		}
 		$s_phone = $query->phone;
 		$s_address = $query->address;
 
