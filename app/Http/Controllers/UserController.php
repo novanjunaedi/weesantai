@@ -41,28 +41,28 @@ class UserController extends Controller
     public function edit($id)
     {
 		$user_data = \App\User::find($id);
-		$query = Auth::guard('role')->user();
-		$s_id = $query->user_id;
-		$s_name = $query->name;
-		$s_img = $query->img;
-		$s_email = $query->email;
-		$s_dob = $query->dateofbirth;
-		$s_gender = $query->gender;
-		$s_phone = $query->phone;
-		$s_address = $query->address;
+		//$query = Auth::guard('role')->user();
+		//$s_id = $query->user_id;
+		//$s_name = $query->name;
+		//$s_img = $query->img;
+		//$s_email = $query->email;
+		//$s_dob = $query->dateofbirth;
+		//$s_gender = $query->gender;
+		//$s_phone = $query->phone;
+		//$s_address = $query->address;
 
-		$data = [
-			'user_data' => $user_data,
-			'user_id' => $s_id,
-			'user_name' => $s_name,
-			'user_email' => $s_email,
-			'user_dob' => $s_dob,
-			'user_gender' => $s_gender,
-			'user_img' => $s_img,
-			'user_phone' => $s_phone,
-			'user_address' => $s_address
-		];
-    	return view('user.edit', $data);
+		//$data = [
+		//	'user_data' => $user_data,
+		//	'user_id' => $s_id,
+		//	'user_name' => $s_name,
+		//	'user_email' => $s_email,
+		//	'user_dob' => $s_dob,
+		//	'user_gender' => $s_gender,
+		//	'user_img' => $s_img,
+		//	'user_phone' => $s_phone,
+		//	'user_address' => $s_address
+		//];
+    	return view('user.edit', $user_data);
     }
 
     public function update(Request $request,$id)

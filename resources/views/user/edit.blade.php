@@ -28,7 +28,7 @@
 								  <label>Nama</label>		
 			              		</div>
 			              		<div class="col-lg-9">
-			              			<input name="name" type="text" class="form-control" id="inputName" placeholder="Masukkan nama" value="{{$user_name}}" required>		
+			              			<input name="name" type="text" class="form-control" id="inputName" placeholder="Masukkan nama" value="{{$user_data->name}}" required>		
 			              		</div>
 			              	</div>
 			              </div>
@@ -38,7 +38,7 @@
 			              			<label>Email</label>		
 			              		</div>
 			              		<div class="col-lg-9">
-			              			<input name="email" type="text" class="form-control" id="inputEmail" placeholder="Masukkan email" value="{{$user_email}}" readonly>		
+			              			<input name="email" type="text" class="form-control" id="inputEmail" placeholder="Masukkan email" value="{{$user_data->email}}" readonly>		
 			              		</div>
 			              	</div>
 			              </div>
@@ -48,7 +48,7 @@
 			              			<label>Tempat/Tanggal Lahir</label>		
 			              		</div>
 			              		<div class="col-lg-9">
-			              			<input name="dateofbirth" type="date" class="form-control" id="inputDate" value="{{$user_dob}}" required>
+			              			<input name="dateofbirth" type="date" class="form-control" id="inputDate" value="{{$user_data->dateofbirth}}" required>
 			              		</div>
 			              	</div>
 			              </div>
@@ -71,7 +71,7 @@
 			              			<label>Nomor HP aktif</label>		
 			              		</div>
 			              		<div class="col-lg-9">
-			              			<input name="phone" type="text" class="form-control" id="inputPhone" placeholder="Masukkan nomor hp" value="{{$user_phone}}" required>		
+			              			<input name="phone" type="text" class="form-control" id="inputPhone" placeholder="Masukkan nomor hp" value="{{$user_data->phone}}" required>		
 			              		</div>
 			              	</div>
 			              </div>
@@ -90,7 +90,7 @@
 			              		<div class="col-lg-3">
 			              			<label>Alamat</label>		
 			              		</div>
-			              		<div class="col-lg-9"><textarea name="address" class="form-control" id="inputDestinationDesc" rows="3" required>{{$user_address}}</textarea>
+			              		<div class="col-lg-9"><textarea name="address" class="form-control" id="inputDestinationDesc" rows="3" required>{{$user_data->address}}</textarea>
 			              		</div>
 			              	</div>
 			              </div>
