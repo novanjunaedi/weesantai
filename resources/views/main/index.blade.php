@@ -12,22 +12,21 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="search-wrap-1 ftco-animate p-4">
-					<form action="/search-destination" method="GET" class="search-property-1">
-						@csrf
+					<form action="#" class="search-property-1">
 						<div class="row">
 							<div class="col-lg-10 align-items-end">
 								<div class="form-group">
-									<label for="search">Cari Tempat Wisata</label>
+									<label for="#">Cari Tempat Wisata</label>
 									<div class="form-field">
 										<div class="icon"><span class="ion-ios-search"></span></div>
-										<input type="text" name="search" class="form-control" placeholder="Masukkan Destinasi">
+										<input type="text" class="form-control" placeholder="Masukkan Destinasi">
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-2 align-self-end">
 								<div class="form-group">
 									<div class="form-field">
-										<button type="submit" class="form-control btn btn-primary">Cari</button>
+										<input type="submit" value="Cari" class="form-control btn btn-primary">
 									</div>
 								</div>
 							</div>
@@ -45,7 +44,7 @@
 	<div class="container">
 		<div class="row justify-content-center pb-4">
 			<div class="col-md-12 heading-section text-center ftco-animate">
-				<h2 class="mb-4" id="destinasi">Kota Destinasi Terbaik</h2>
+				<h2 class="mb-4">Kota Destinasi Terbaik</h2>
 			</div>
 		</div>
 		<div class="row">
@@ -142,103 +141,18 @@
 			</div>
 		</div>
 		<div class="row">
+			@foreach($populer as $pp)
 			<div class="col-md-4 ftco-animate">
 				<div class="project-wrap">
-					<a href="#" class="img" style="background-image: url(img/main/destination-1.jpg);"></a>
+					<a href="#" class="img" style="background-image: url({{asset($pp->img)}});"></a>
 					<div class="text p-4">
-						<span class="price">$300/person</span>
-						<span class="days">8 Days Tour</span>
-						<h3><a href="#">Bali, Indonesia</a></h3>
-						<p class="location"><span class="ion-ios-map"></span> Bali, Indonesia</p>
-						<ul>
-							<li><span class="flaticon-shower"></span>2</li>
-							<li><span class="flaticon-king-size"></span>3</li>
-							<li><span class="flaticon-mountains"></span>Near Mountain</li>
-						</ul>
+						<span class="price">Rp. {{$pp->price}}</span>
+						<span><a href="#">{{$pp->address}}</a></span>
+						<p class="location"><span class="ion-ios-map"></span> {{$pp->location}}</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 ftco-animate">
-				<div class="project-wrap">
-					<a href="#" class="img" style="background-image: url(img/main/destination-2.jpg);"></a>
-					<div class="text p-4">
-						<span class="price">$300/person</span>
-						<span class="days">10 Days Tour</span>
-						<h3><a href="#">Bali, Indonesia</a></h3>
-						<p class="location"><span class="ion-ios-map"></span> Bali, Indonesia</p>
-						<ul>
-							<li><span class="flaticon-shower"></span>2</li>
-							<li><span class="flaticon-king-size"></span>3</li>
-							<li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 ftco-animate">
-				<div class="project-wrap">
-					<a href="#" class="img" style="background-image: url(img/main/destination-3.jpg);"></a>
-					<div class="text p-4">
-						<span class="price">$300/person</span>
-						<span class="days">7 Days Tour</span>
-						<h3><a href="#">Bali, Indonesia</a></h3>
-						<p class="location"><span class="ion-ios-map"></span> Bali, Indonesia</p>
-						<ul>
-							<li><span class="flaticon-shower"></span>2</li>
-							<li><span class="flaticon-king-size"></span>3</li>
-							<li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4 ftco-animate">
-				<div class="project-wrap">
-					<a href="#" class="img" style="background-image: url(img/main/destination-4.jpg);"></a>
-					<div class="text p-4">
-						<span class="price">$300/person</span>
-						<span class="days">8 Days Tour</span>
-						<h3><a href="#">Bali, Indonesia</a></h3>
-						<p class="location"><span class="ion-ios-map"></span> Bali, Indonesia</p>
-						<ul>
-							<li><span class="flaticon-shower"></span>2</li>
-							<li><span class="flaticon-king-size"></span>3</li>
-							<li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 ftco-animate">
-				<div class="project-wrap">
-					<a href="#" class="img" style="background-image: url(img/main/destination-5.jpg);"></a>
-					<div class="text p-4">
-						<span class="price">$300/person</span>
-						<span class="days">10 Days Tour</span>
-						<h3><a href="#">Bali, Indonesia</a></h3>
-						<p class="location"><span class="ion-ios-map"></span> Bali, Indonesia</p>
-						<ul>
-							<li><span class="flaticon-shower"></span>2</li>
-							<li><span class="flaticon-king-size"></span>3</li>
-							<li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 ftco-animate">
-				<div class="project-wrap">
-					<a href="#" class="img" style="background-image: url(img/main/destination-6.jpg);"></a>
-					<div class="text p-4">
-						<span class="price">$300/person</span>
-						<span class="days">7 Days Tour</span>
-						<h3><a href="#">Bali, Indonesia</a></h3>
-						<p class="location"><span class="ion-ios-map"></span> Bali, Indonesia</p>
-						<ul>
-							<li><span class="flaticon-shower"></span>2</li>
-							<li><span class="flaticon-king-size"></span>3</li>
-							<li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+		@endforeach
 		</div>
 	</div>
 </section>
