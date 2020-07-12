@@ -98,15 +98,15 @@ class MainController extends Controller
 
     $query = Auth::guard('role')->user();
 
-    if(auth::user()) {
+    if (auth::guard('role')->user()) {
       $s_name = $query->name;
       $s_email = $query->email;
-  
+
       date_default_timezone_set("Asia/Bangkok");
       $gettime = date("h:i:s d-m-y");
       $valid_until = date("h:i:s d-m-y", strtotime('+24 hours'));
-  
-  
+
+
       $data = [
         'destinations' => $destinationName,
         's_name' => $s_name,
@@ -114,13 +114,11 @@ class MainController extends Controller
         'timenow' => $gettime,
         'valid_until' => $valid_until
       ];
-  
+
       return view('main.detail_wisata', $data);
+    } else {
+      return redirect("/login")->with('statusLogin', "Silahkan Login Sebelum Melanjutkan");
     }
-    else {
-      return redirect("/login")->with('statusLogin' , "Harap Login Sebelum Melanjutkan");
-    }
-   
   }
 
   public function searchDestination(Request $request)
