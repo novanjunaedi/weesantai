@@ -24,7 +24,7 @@
 					@if ($user_data->img == null )
 					<img src="{{ asset('profile_default/default-pria.png') }}" height="300px" class="card-img-top p-3 img-fluid" alt="profile">
 					@else
-				  	<img src="{{ asset($user_data->img) }}" class="card-img-top p-3 img-fluid" alt="profile">
+				  	<img src="{{ asset('user_img/'.$user_data->img) }}" class="card-img-top p-3 img-fluid" alt="profile">
 				  	@endif
 				  <div class="card-body">
 				    <h5 class="card-title">{{$user_data->name}}</h5>
