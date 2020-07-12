@@ -13,7 +13,7 @@
           <div class="row">
             <div class="col-md-3">
               <div class="card shadow mb-3 bg-white rounded">
-                <div class="card-header">
+                <div class="card-header bg-dark text-white">
                   User Terdaftar
                 </div>
                 <div class="card-body">
@@ -24,7 +24,7 @@
 
             <div class="col-md-3">
               <div class="card shadow mb-3 bg-white rounded">
-                <div class="card-header">
+                <div class="card-header bg-dark text-white">
                   Kota
                 </div>
                 <div class="card-body">
@@ -35,7 +35,7 @@
 
             <div class="col-md-3">
               <div class="card shadow mb-3 bg-white rounded">
-                <div class="card-header">
+                <div class="card-header bg-dark text-white">
                   Destinasi
                 </div>
                 <div class="card-body">
@@ -46,7 +46,7 @@
 
             <div class="col-md-3">
               <div class="card shadow mb-3 bg-white rounded">
-                <div class="card-header">
+                <div class="card-header bg-dark text-white">
                   Transaksi Berhasil
                 </div>
                 <div class="card-body">
