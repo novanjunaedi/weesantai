@@ -25,7 +25,6 @@
 					@if ($user_data->img == null )
 					<img src="{{ asset('profile_default/default-pria.png') }}" class="card-img-top p-3 img-fluid img-profile rounded-circle" alt="profile">
 					@else
-<<<<<<< HEAD
 				  	<img src="{{ asset('user_img/'.$user_data->img) }}" class="card-img-top p-3 img-fluid img-profile rounded-circle" alt="profile">
 				  	<img src="{{asset($user_data->img)}}" class="card-img-top p-3 img-fluid" alt="profile">
 				  	@endif
@@ -46,9 +45,8 @@
 					<i class="fas fa-fw fa-venus-mars kosong"></i> <span class="kosong">belum ditambahkan</span> <br/>
 					@else
 					<i class="fas fa-fw fa-venus-mars ada"></i> {{$user_data->gender}} <br/>
-=======
 					<img src="{{asset($user_data->img)}}" class="card-img-top p-3 img-fluid" alt="profile">
->>>>>>> 58e3e7987f008d393d777a6a812b65563d8258cf
+
 					@endif
 					<div class="card-body">
 						<h5 class="card-title">{{$user_data->name}}</h5>
