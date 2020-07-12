@@ -27,14 +27,16 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-warning sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        
         <div class="sidebar-brand-icon">
-          <i class="fas fa-laugh-wink"></i>
+          <img style="width: 30px; height: auto;" src="{{asset('/img/ic_logodash1.png')}}" />
         </div>
-        <div class="sidebar-brand-text mx-3">Weesantai</div>
+        
+        <img class="sidebar-brand-text mx-3" style="width: 120px; height: auto;" src="{{asset('/img/ic_logodash2.png')}}" />
       </a>
 
       <!-- Divider -->

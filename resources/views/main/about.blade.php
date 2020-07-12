@@ -23,6 +23,56 @@
   </div>
 </section>
 
+<section class="team">
+  <div class="container pb-4 pt-4">
+    <h1 style="text-align: center;">Development Team</h1>
+    <p style="text-align: center;">Tim developer dibalik Weesantai.id</p>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card-deck">
+          <div class="card shadow mb-5 bg-white rounded">
+            <img src="{{asset('/img/fijey.jpg')}}" class="card-img-top" alt="Fajar Mukti Hidayat">
+            <div class="card-body p-3">
+              <h5 class="card-title">Fajar Mukti Hidayat</h5>
+              <p class="card-text">
+                Fullstack Developer
+              </p>
+              <p class="card-text">
+                <small class="text-muted">
+                <a href="#">Instagram</a> |
+                <a href="#">Github</a>
+                </small>
+              </p>
+            </div>
+          </div>
+          <div class="card shadow mb-5 bg-white rounded">
+            <img src="{{asset('/img/kintol.jpg')}}" class="card-img-top" alt="Mochamad Rizki">
+            <div class="card-body p-3">
+              <h5 class="card-title">Mochamad Rizki</h5>
+              <p class="card-text">Backend Developer</p>
+              <p class="card-text"><small class="text-muted">
+              <a href="#">Instagram</a> |
+                <a href="#">Github</a>
+              </small></p>
+            </div>
+          </div>
+          <div class="card shadow mb-5 bg-white rounded">
+            <img src="{{asset('/img/novan.jpg')}}" class="card-img-top" alt="Novan Junaedi">
+            <div class="card-body p-3">
+              <h5 class="card-title">Novan Junaedi</h5>
+              <p class="card-text">Frontend Developer</p>
+              <p class="card-text"><small class="text-muted">
+                <a href="#">Instagram</a> |
+                <a href="#">Github</a>
+              </small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="ftco-counter img" id="section-counter">
   <div class="container">
     <div class="row">

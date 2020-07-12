@@ -13,7 +13,7 @@
           <!-- Content Row -->
           <div class="row">
           	<div class="col">
-          		<button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModal">
+          		<button type="button" class="btn btn-warning mb-2" data-toggle="modal" data-target="#exampleModal">
 				  Tambah Destinasi
 				</button>
 				@if(session('success'))
@@ -51,7 +51,7 @@
 								<td>{{$destination->rating}}</td>
 								<td style="max-width: 50px; overflow: hidden;">{{$destination->img}}</td>
 								<td style="max-width: 25px;">
-									<a class="btn btn-primary btn-sm" href="/add-destination/{{$destination->id}}/edit"><i class="fas fa-fw fa-edit"></i></a>
+									<a class="btn btn-warning btn-sm" href="/add-destination/{{$destination->id}}/edit"><i class="fas fa-fw fa-edit"></i></a>
 									<a class="btn btn-danger btn-sm" href="/add-destination/{{$destination->id}}/delete" onclick="return confirm('Hapus destinasi?')"><i class="fas fa-fw fa-trash"></i></a>
 								</td>
 							</tr>
@@ -117,7 +117,7 @@
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-		        <button type="submit" class="btn btn-primary">Tambah</button>
+		        <button type="submit" class="btn btn-warning">Tambah</button>
 		        
 		        </form>
 

@@ -50,7 +50,7 @@
                 <label for="inputDestinationDesc">Deskripsi</label>
                 <textarea name="description" class="form-control" id="inputDestinationDesc" rows="3" required>{{$destination->description}}</textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Ubah</button>
+              <button type="submit" class="btn btn-warning">Ubah</button>
               <a class="btn btn-secondary" href="/add-destination">Kembali</a>
             </div>
           </form>
