@@ -8,10 +8,10 @@ use Auth;
 class UserController extends Controller
 {
 
-    public function userprofile($id)
-    {
+	public function userprofile($id)
+	{
 		$user_data = \App\User::find($id);
-		
+
 		$query = Auth::guard('role')->user();
 		$s_id = $query->id;
 		$s_name = $query->name;
@@ -35,11 +35,11 @@ class UserController extends Controller
 
 		];
 
-    	return view('user.userprofile', $data);
-    }
+		return view('user.userprofile', $data);
+	}
 
-    public function edit($id)
-    {
+	public function edit($id)
+	{
 		$user_data = \App\User::find($id);
 		$query = Auth::guard('role')->user();
 		$s_id = $query->user_id;
@@ -62,19 +62,19 @@ class UserController extends Controller
 			'user_phone' => $s_phone,
 			'user_address' => $s_address
 		];
-    	return view('user.edit', $data);
-    }
+		return view('user.edit', $data);
+	}
 
-    public function update(Request $request,$id)
-    {
+	public function update(Request $request, $id)
+	{
 		$user_data = \App\User::find($id);
-        $user_data->update($request->all());
-        
-		if($request->hasfile('img')){
+		$user_data->update($request->all());
+
+		if ($request->hasfile('img')) {
 			$request->file('img')->move('user_img/', $request->file('img')->getClientOriginalName());
 			$user_data->img = $request->file('img')->getClientOriginalName();
 			$user_data->save();
 		}
-    	return redirect("/user/$id/profile")->with('success', 'Data telah berhasil diubah!');
-    }
+		return redirect("/user/$id/profile")->with('success', 'Data telah berhasil diubah!');
+	}
 }

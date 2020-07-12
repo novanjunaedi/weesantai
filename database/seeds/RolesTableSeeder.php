@@ -13,7 +13,7 @@ class RolesTableSeeder extends Seeder
     public function run()
     {
         Role::create([
-            'name' => 'admin',
+            'name' => 'Admin',
             'role' => 'admin',
             'email' => 'admin@weesantai.id',
             'password' => bcrypt('admin'),

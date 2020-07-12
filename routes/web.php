@@ -10,6 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+use App\Http\Controllers\UserAdminController;
+
 Route::get('/', 'MainController@index');
 Route::get('/destination', 'MainController@destination');
 Route::get('/about', 'MainController@about');
@@ -54,6 +57,8 @@ Route::middleware(['auth:role', 'checkRole:admin'])->group(function () {
 
     Route::get('/user-admin', 'UserAdminController@index');
     Route::get('/user-admin/{id}/', 'UserAdminController@edit');
+
+    Route::get('/dashboard/profile', 'UserAdminController@profile');
 });
 
 Route::middleware(['auth:role', 'checkRole:user,admin'])->group(function () {
