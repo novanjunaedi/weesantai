@@ -16,6 +16,7 @@
 		color: orange;
 	}
 </style>
+
 <section class="ftco-section">
 	<div class="container">
 		<div class="row">
@@ -84,10 +85,13 @@
 						<h5 class="card-text pt-4">
 							Rekomendasi Untuk Anda
 							<div class="row pt-4">
+								<?php $count = 0; ?>
 								@foreach($destinations as $destination)
+								<?php if ($count == 2) break; ?>
+
 								<div class="col-md-6 ftco-animate">
 									<div class="project-wrap">
-										<a href="#" class="img" style="background-image: url({{asset($user_data->img)}});"></a>
+										<a href="/detail-wisata/{{$destination->destination_name}}" class="img" style="background-image: url({{asset($destination->img)}});"></a>
 										<div class="text p-4">
 											<span class="price">{{ $destination->price }}</span>
 											<span class="pt-3">
@@ -100,6 +104,7 @@
 										</div>
 									</div>
 								</div>
+								<?php $count++; ?>
 								@endforeach
 							</div>
 						</h5>
