@@ -144,7 +144,7 @@
 			@foreach($populer as $pp)
 			<div class="col-md-4 ftco-animate">
 				<div class="project-wrap">
-					<a href="#" class="img" style="background-image: url({{asset($pp->img)}});"></a>
+					<a href="/detail-wisata/{{$pp->destination_name}}" class="img" style="background-image: url({{asset($pp->img)}});"></a>
 					<div class="text p-4">
 						<span class="price">Rp. {{$pp->price}}</span>
 						<span><a href="#">{{$pp->address}}</a></span>
