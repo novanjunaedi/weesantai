@@ -57,7 +57,7 @@
                             @if ($user->img==null)
                             <img class="img-profile rounded-circle" src="{{ asset('profile_default/default-pria.png')}}">
                             @else
-                            <img class="img-profile rounded-circle" src="{{$user->img}}">    
+                            <img class="img-profile rounded-circle" src="{{asset($user->img)}}">    
                             @endif
                         </a>
                         <!-- Dropdown - User Information -->

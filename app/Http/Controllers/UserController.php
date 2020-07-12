@@ -70,9 +70,13 @@ class UserController extends Controller
 		$user_data = \App\User::find($id);
 		$user_data->update($request->all());
 
+		$pathimg = $request->get('name');
+		$newstr = preg_replace('/\s/', '', $pathimg);
+		$path = "user_img/$newstr/";
+
 		if ($request->hasfile('img')) {
-			$request->file('img')->move('user_img/', $request->file('img')->getClientOriginalName());
-			$user_data->img = $request->file('img')->getClientOriginalName();
+			$request->file('img')->move('user_img/' . $newstr, $request->file('img')->getClientOriginalName());
+			$user_data->img = $path . $request->file('img')->getClientOriginalName();
 			$user_data->save();
 		}
 		return redirect("/user/$id/profile")->with('success', 'Data telah berhasil diubah!');
