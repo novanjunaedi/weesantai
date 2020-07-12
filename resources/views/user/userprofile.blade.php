@@ -13,17 +13,17 @@
         <div class="row">
         	<div class="col-lg-4 mb-2">
         		<div class="card">
-				  <img src="{{asset($user_data->img)}}" class="card-img-top p-3" alt="profile">
+				  <img src="{{ $user_img }}" class="card-img-top p-3" alt="profile">
 				  <div class="card-body">
-				    <h5 class="card-title">{{$user_data->name}}</h5>
+				    <h5 class="card-title">{{$user_name}}</h5>
 				    <p class="card-text">
-				    <i class="fas fa-fw fa-envelope"></i> {{$user_data->email}} <br />
-				    <i class="fas fa-fw fa-calendar"></i> {{$user_data->dateofbirth}} <br />
-				    <i class="fas fa-fw fa-venus-mars"></i> {{$user_data->gender}} <br />
-				    <i class="fas fa-fw fa-phone"></i> {{$user_data->phone}} <br />
-				    <i class="fas fa-fw fa-home"></i> {{$user_data->address}} <br />
+				    <i class="fas fa-fw fa-envelope"></i> {{$user_email}} <br />
+				    <i class="fas fa-fw fa-calendar"></i> {{$user_dob}} <br />
+				    <i class="fas fa-fw fa-venus-mars"></i> {{$user_gender}} <br />
+				    <i class="fas fa-fw fa-phone"></i> {{$user_phone}} <br />
+				    <i class="fas fa-fw fa-home"></i> {{$user_address}} <br />
 					</p>
-				    <a href="/user/{{$user_data->id}}/edit" class="btn btn-primary">Edit Profile</a>
+				    <a href="/user/{{$user_id}}/edit" class="btn btn-primary">Edit Profile</a>
 				  </div>
 				</div>
         	</div>
