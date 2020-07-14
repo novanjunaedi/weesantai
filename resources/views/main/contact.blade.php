@@ -2,7 +2,7 @@
 
 @section('title', 'Kontak')
 @section('bg-banner', 'background-image: url("img/main/banner_contact.jpg");')
-@section('title-banner', 'Kontak Kami')
+@section('title-banner', 'Hubungi Kami')
 
 @section('content')
 <section class="ftco-section ftco-no-pb contact-section">
