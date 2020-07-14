@@ -11,7 +11,6 @@ class UserAdminController extends Controller
         $user_data = \App\User::all();
         $adminAll = \App\Admin::all();
         $admin = $adminAll[0];
-        dd($admin);
         return view('useradmin.index', ['user_data' => $user_data, 'admin' => $admin]);
     }
 
