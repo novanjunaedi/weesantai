@@ -7,8 +7,10 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">List User</h1>
+			<h1 class="h3 mb-0 text-gray-800">List User</h1>
           </div>
+
+		  <a class="btn btn-warning mt-4 mb-4 text-center" href="/user-admin/print-pdf"><i class="fas fa-fw fa-print"></i></a>
 
           <!-- Content Row -->
           <div class="row">

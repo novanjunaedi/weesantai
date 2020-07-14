@@ -56,7 +56,10 @@ Route::middleware(['auth:role', 'checkRole:admin'])->group(function () {
     Route::get('/transaction/{id}/delete', 'TranscController@delete');
 
     Route::get('/user-admin', 'UserAdminController@index');
-    Route::get('/user-admin/{id}/', 'UserAdminController@edit');
+    Route::get('/user-admin/print-pdf', 'UserAdminController@pdf');
+
+    Route::get('/transaction', 'TranscController@index');
+    Route::get('/transaction/print-pdf', 'TranscController@pdf');
 
     Route::get('/dashboard/profile', 'UserAdminController@profile');
 });
@@ -65,5 +68,4 @@ Route::middleware(['auth:role', 'checkRole:user,admin'])->group(function () {
     Route::get('/user/{id}/profile', 'UserController@userprofile');
     Route::get('/user/{id}/edit', 'UserController@edit');
     Route::post('/user/{id}/update', 'UserController@update');
-    Route::get('/transaction', 'TranscController@index');
 });

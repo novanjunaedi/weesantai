@@ -26,4 +26,13 @@ class TranscController extends Controller
     $destination = \App\Transaction::create($request->all());
     return redirect()->back()->with('success', 'Sukses Membeli Tiket Klik Button dibawah untuk mencetak tiket');
   }
+
+  public function pdf() 
+  {
+    $trans_data = \App\Transaction::all();
+    $adminAll = \App\Admin::all();
+    $admin = $adminAll[0];
+      $pdf = \PDF::loadView('transaction.transaction-report', ['trans_data' => $trans_data, 'admin' => $admin]);
+     return $pdf->stream();
+  }
 }
