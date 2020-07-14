@@ -10,6 +10,9 @@
             <h1 class="h3 mb-0 text-gray-800">History Transaction User</h1>
 		  </div>
 
+		  <a class="btn btn-warning mt-4 mb-4 text-center" href="/transaction/print-pdf"><i class="fas fa-fw fa-print"></i></a>
+
+
           <!-- Content Row -->
           <div class="row">
           	<div class="col">
