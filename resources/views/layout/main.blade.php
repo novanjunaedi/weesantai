@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-    
+
     <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{asset('css/main/open-iconic-bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/main/animate.css')}}">
@@ -57,7 +57,7 @@
                             @if ($user->img==null)
                             <img class="img-profile rounded-circle" src="{{ asset('profile_default/default-pria.png')}}">
                             @else
-                            <img class="img-profile rounded-circle" src="{{asset($user->img)}}">    
+                            <img class="img-profile rounded-circle" src="{{asset($user->img)}}">
                             @endif
                         </a>
                         <!-- Dropdown - User Information -->

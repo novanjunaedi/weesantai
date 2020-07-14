@@ -57,7 +57,7 @@
 							<i class="fas fa-fw fa-home ada"></i> {{$user_data->address}} <br />
 							@endif
 						</p>
-						<a href="/user/{{$user_data->id}}/edit" class="btn btn-primary">Edit Profile</a>
+						<a href="/user/{{$user_data->user_id}}/edit" class="btn btn-primary">Edit Profile</a>
 					</div>
 				</div>
 			</div>
