@@ -21,6 +21,7 @@
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src="{{asset($list->img)}}" class="card-img" alt="location" height="200px" width="800px">
+                            @php dd($list->img); @endphp
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">

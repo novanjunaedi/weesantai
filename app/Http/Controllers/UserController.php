@@ -10,7 +10,7 @@ class UserController extends Controller
 
 	public function userprofile($id)
 	{
-		$user_data = \App\User::find($id);
+		$user_data = \App\User::where('user_id', $id)->first();
 		$transactions = \App\Transaction::where('name', $user_data->name)->get();
 		$destinations = \App\Destination::all();
 
@@ -43,7 +43,7 @@ class UserController extends Controller
 
 	public function edit($id)
 	{
-		$user_data = \App\User::find($id);
+		$user_data = \App\User::where('user_id', $id)->first();
 		$query = Auth::guard('role')->user();
 		$s_id = $query->user_id;
 		$s_name = $query->name;
@@ -70,7 +70,8 @@ class UserController extends Controller
 
 	public function update(Request $request, $id)
 	{
-		$user_data = \App\User::find($id);
+		$user_data = \App\User::where('user_id', $id)->first();
+		$role_data = \App\Role::find($id)->update($request->all());
 		$user_data->update($request->all());
 
 		$pathimg = $request->get('name');

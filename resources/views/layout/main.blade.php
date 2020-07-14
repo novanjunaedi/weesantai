@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-    
+
     <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{asset('css/main/open-iconic-bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/main/animate.css')}}">
@@ -57,7 +57,7 @@
                             @if ($user->img==null)
                             <img class="img-profile rounded-circle" src="{{ asset('profile_default/default-pria.png')}}">
                             @else
-                            <img class="img-profile rounded-circle" src="{{$user->img}}">    
+                            <img class="img-profile rounded-circle" src="{{asset($user->img)}}">
                             @endif
                         </a>
                         <!-- Dropdown - User Information -->
@@ -112,8 +112,8 @@
                     <!-- <p> -->
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     <!-- Copyright &copy;<script>
-							document.write(new Date().getFullYear());
-						</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib | Kelompok 1</a> -->
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib | Kelompok 1</a> -->
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     <!-- </p> -->
                 </div>
