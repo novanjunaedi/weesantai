@@ -114,7 +114,7 @@
 					<a href="/detail-list/Lombok" class="img" style="background-image: url(img/city/lombok.jpg);">
 						<div class="text">
 							<h3>Lombok</h3>
-							<span>{{ $lombok_count }} Tours</span>
+							<span>{{ $lombok_count }} Destinasi</span>
 						</div>
 					</a>
 				</div>
@@ -124,7 +124,7 @@
 					<a href="/detail-list/Lampung" class="img" style="background-image: url(img/city/lampung.jpg);">
 						<div class="text">
 							<h3>Lampung</h3>
-							<span>{{$lampung_count}} Tours</span>
+							<span>{{$lampung_count}} Destinasi</span>
 						</div>
 					</a>
 				</div>
