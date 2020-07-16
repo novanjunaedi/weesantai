@@ -152,7 +152,10 @@
 						<span class="pt-3">
 							<a href="#">{{$pp->location}}</a>
 						</span>
-						<p class="card-text pt-3">
+						<h5 class="card-title pt-2">
+							<a href="/detail-wisata/{{$pp->destination_name}}">{{$pp->destination_name}}</a>
+						</h5>
+						<p class="card-text pt-0">
 							<div class="row">
 								<div class="col-sm-1">
 									<i class="fas fa-fw fa-star"></i>
