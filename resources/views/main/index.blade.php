@@ -153,7 +153,22 @@
 							<a href="#">{{$pp->location}}</a>
 						</span>
 						<p class="card-text pt-3">
-							<i class="fas fa-fw fa-map-marker"></i>{{$pp->address}}
+							<div class="row">
+								<div class="col-sm-1">
+									<i class="fas fa-fw fa-star"></i>
+								</div>
+								<div class="col-sm-10">
+									{{$pp->rating}}
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-1">
+									<i class="fas fa-fw fa-map-marker"></i>		
+								</div>
+								<div class="col-sm-10">
+									{{$pp->address}}		
+								</div>
+							</div>
 						</p>
 						<p style="text-align: right;"><a class="card-link" href="/detail-wisata/{{$pp->destination_name}}">Detail</a></p>
 					</div>
