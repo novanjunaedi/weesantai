@@ -146,7 +146,9 @@
 				<div class="project-wrap shadow mb-5 bg-white rounded">
 					<a href="/detail-wisata/{{$pp->destination_name}}" class="img" style="background-image: url({{asset($pp->img)}});"></a>
 					<div class="text p-4">
-						<span class="price">Rp.{{$pp->price}}</span>
+						<span class="price"><i class="fas fa-fw fa-money-bill-alt"></i> 
+							Rp.{{$pp->price}}
+						</span>
 						<span class="pt-3">
 							<a href="#">{{$pp->location}}</a>
 						</span>
