@@ -11,8 +11,6 @@
 @endsection
 
 @section('content')
-
-<section class="ftco-section">
     <div class="container">
         <div class="row">
             @foreach($allget as $list)
@@ -36,6 +34,7 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
             @endforeach
-</section>
 @endsection
