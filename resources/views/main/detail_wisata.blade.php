@@ -28,7 +28,7 @@
 			<div class="card shadow p-3 mb-5 bg-white rounded">
 				<div class="container">
 					<h1 class="card-title">{{$destination->destination_name}}</h1>
-					<h5><i class="fas fa-fw fa-map-marker"></i> {{$destination->location}} <i class="fas fa-fw fa-star"></i> {{$destination->rating}} </h5>
+					<h5><i class="fas fa-fw fa-map-marker" style="color:#ffc219;"></i> {{$destination->location}} <i class="fas fa-fw fa-star" style="color:#ffc219;"></i> {{$destination->rating}} </h5>
 					<center>
 						<img class="thumb-img" src="{{asset($destination->img)}}" alt="gambar" width="800px" height="300px">
 					</center>
@@ -46,7 +46,7 @@
 										class="weather-icon" /> {{ $cuaca->main->temp_max }}°C <span
 										class="min-temperature">{{ $cuaca->main->temp_min}}°C</span>
 								</div>
-								<table class="table-striped table-responsive">
+								<table class=" table-responsive text-white" style="background-color:#ffc219; padding:10px;">
 									<tr>
 										<td>Hari</td>
 										<td>:</td>
@@ -111,15 +111,15 @@
 							Rp.{{$pp->price}}
 						</span>
 						<span class="pt-3">
-							<a href="#">{{$pp->location}}</a>
+							<span class="">{{$pp->location}}</span>
 						</span>
 						<h5 class="card-title pt-2">
-							<a href="/detail-wisata/{{$pp->destination_name}}">{{$pp->destination_name}}</a>
+							<a style="color:black;" href="/detail-wisata/{{$pp->destination_name}}">{{$pp->destination_name}}</a>
 						</h5>
 						<p class="card-text pt-0">
 							<div class="row">
 								<div class="col-sm-1">
-									<i class="fas fa-fw fa-star"></i>
+									<i class="fas fa-fw fa-star" style="color:#ffc219;"></i>
 								</div>
 								<div class="col-sm-10">
 									{{$pp->rating}}
@@ -127,7 +127,7 @@
 							</div>
 							<div class="row">
 								<div class="col-sm-1">
-									<i class="fas fa-fw fa-map-marker"></i>		
+									<i class="fas fa-fw fa-map-marker" style="color:#ffc219;"></i>		
 								</div>
 								<div class="col-sm-10">
 									{{$pp->address}}		

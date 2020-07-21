@@ -74,6 +74,8 @@
 							<div class="col">
 								<div class="card">
 									<p class="card-title p-3">{{ $transaction->destination_name }}</p>
+									<p class="card-title p-4" style="color: green"> Transaksi Sukses pada Tanggal {{$transaction->buy_date}}
+									</p>
 								</div>
 							</div>
 						</div>
@@ -88,19 +90,38 @@
 								<?php $count = 0; ?>
 								@foreach($destinations as $destination)
 								<?php if ($count == 2) break; ?>
-
 								<div class="col-md-6 ftco-animate">
-									<div class="project-wrap">
+									<div class="project-wrap shadow mb-5 bg-white rounded">
 										<a href="/detail-wisata/{{$destination->destination_name}}" class="img" style="background-image: url({{asset($destination->img)}});"></a>
 										<div class="text p-4">
-											<span class="price">{{ $destination->price }}</span>
-											<span class="pt-3">
-												<a href="#">{{ $destination->location }}</a>
+											<span class="price"><i class="fas fa-fw fa-money-bill-alt"></i> 
+												Rp.{{$destination->price}}
 											</span>
-											<p class="card-text pt-3">
-												<i class="fas fa-fw fa-map-marker"></i>{{ $destination->address}}
+											<span class="pt-3">
+												<span>{{$destination->location}}</span>
+											</span>
+											<h5 class="card-title pt-2">
+												<a style="color:black;" href="/detail-wisata/{{$destination->destination_name}}">{{$destination->destination_name}}</a>
+											</h5>
+											<p class="card-text pt-0">
+												<div class="row">
+													<div class="col-sm-1">
+														<i class="fas fa-fw fa-star" style="color:#ffc219;"></i>
+													</div>
+													<div class="col-sm-10">
+														<span>{{$destination->rating}}</span>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-sm-1">
+														<i class="fas fa-fw fa-map-marker" style="color:#ffc219;"></i>		
+													</div>
+													<div class="col-sm-10">
+														<span>{{$destination->address}}</span>		
+													</div>
+												</div>
 											</p>
-											<p style="text-align: right;"><a class="card-link" href="#">Detail</a></p>
+											<p style="text-align: right;"><a class="card-link" href="/detail-wisata/{{$destination->destination_name}}">Detail</a></p>
 										</div>
 									</div>
 								</div>

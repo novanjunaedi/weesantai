@@ -48,6 +48,11 @@
                             <td>:</td>
                             <td>{{ $last->valid_until }}</td>
                         </tr>
+                        <tr>
+                            <td>Email Pemesan</td>
+                            <td>:</td>
+                            <td>{{ $last->email }}</td>
+                        </tr>
                     </table>
                 </div>
             </div>
