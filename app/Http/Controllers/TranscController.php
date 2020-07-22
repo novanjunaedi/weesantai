@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
 
 class TranscController extends Controller
 {
@@ -24,6 +25,16 @@ class TranscController extends Controller
   public function payment(Request $request)
   {
     $destination = \App\Transaction::create($request->all());
+    $query = Auth::guard('role')->user();
+
+    if (auth::guard('role')->user()) {
+      $id = $query->id;
+    }
+
+    $user_data = \App\User::where('user_id', $id)->first();
+		$role_data = \App\Role::find($id)->update($request->all());
+    $user_data->update($request->all());
+    
     return redirect()->back()->with('success', 'Sukses Membeli Tiket Klik Button dibawah untuk mencetak tiket');
   }
 

@@ -138,10 +138,13 @@
 		<div class="row justify-content-center pb-4">
 			<div class="col-md-12 heading-section text-center ftco-animate">
 				<h2 class="mb-4">Destinasi Populer</h2>
+				<p>3 Destinasi Paling Populer</p>
 			</div>
 		</div>
 		<div class="row">
+			<?php $count = 0; ?>
 			@foreach($populer as $pp)
+			<?php if ($count == 3) break; ?>
 			<div class="col-md-4 ftco-animate">
 				<div class="project-wrap shadow mb-5 bg-white rounded">
 					<a href="/detail-wisata/{{$pp->destination_name}}" class="img" style="background-image: url({{asset($pp->img)}});"></a>
@@ -177,6 +180,7 @@
 					</div>
 				</div>
 			</div>
+			<?php $count++; ?>
 		@endforeach
 		</div>
 	</div>

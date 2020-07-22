@@ -17,7 +17,7 @@
                   User Terdaftar
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title" style="font-size: 30px; text-align: right;">{{$jumlah_user}}</h5>
+                  <h5 class="card-title" style="font-size: 30px; text-align: right;">{{$total_user}}</h5>
                 </div>
               </div>
             </div>
@@ -39,7 +39,7 @@
                   Destinasi
                 </div>
                 <div class="card-body">
-                <h5 class="card-title" style="font-size: 30px; text-align: right;">{{$jumlah_destination}}</h5>
+                <h5 class="card-title" style="font-size: 30px; text-align: right;">{{$total_destination}}</h5>
                 </div>
               </div>
             </div>
@@ -50,7 +50,7 @@
                   Transaksi Berhasil
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title" style="font-size: 30px; text-align: right;">{{$jumlah_transaction}}</h5>
+                  <h5 class="card-title" style="font-size: 30px; text-align: right;">{{$total_transaction}}</h5>
                 </div>
               </div>
             </div>
@@ -117,7 +117,7 @@
             </div>
 
             <div class="col-lg-8">
-              <h5 class="title">Transaksi Terakhir</h5>
+              <h5 class="title">5 Transaksi Terakhir</h5>
               <div class="card">
                 <table class="table table-hover">
                   <thead class="thead-dark">
@@ -131,9 +131,9 @@
                   <tbody>
                     <?php $count = 0; ?>
                         
-                    @foreach ($transaction as $tr)
+                    @foreach ($total_transaction_terakhir as $tr)
                       
-                    <?php if($count == 4) break; ?>
+                    <?php if($count == 5) break; ?>
                     <tr>
                     <th scope="row">{{$count + 1}}</th>
                       <td>{{$tr->name}}</td>

@@ -20,8 +20,10 @@ class DashboardController extends Controller
         $jml_destination_count = $jml_destination->count();
 
         $jml_transaction = DB::table('transactions')->get();
+        $jml_transaction_terakhir = DB::table('transactions')
+        ->orderBy('created_at', 'desc')
+        ->limit(5)->get();
         $jml_transaction_count = $jml_transaction->count();
-
 
         //HITUNG DESTINATION KOTA
         // hitunglokasibandung
@@ -69,9 +71,10 @@ class DashboardController extends Controller
 
         $data =
             [
-                'jumlah_user' => $jml_user_count,
-                'jumlah_destination' => $jml_destination_count,
-                'jumlah_transaction' => $jml_destination_count,
+                'total_user' => $jml_user_count,
+                'total_destination' => $jml_destination_count,
+                'total_transaction' => $jml_destination_count,
+                'total_transaction_terakhir' => $jml_transaction_terakhir,
                 'bandung_count'  => $bdgcount,
                 'jakarta_count'   => $jktcount,
                 'bali_count' => $balicount,

@@ -27,12 +27,12 @@
                         <tr>
                             <td>Lokasi</td>
                             <td>:</td>
-                            <td>{{ $last->destination_name }}</td>
+                            <td>{{ $last_location }}</td>
                         </tr>
                         <tr>
                             <td>Nama Pemesan</td>
                             <td>:</td>
-                            <td>{{ $last->name }}</td>
+                            <td>{{ $name_user }}</td>
                         </tr>
                     </table>
                 </div>
@@ -41,17 +41,17 @@
                         <tr>
                             <td>Tanggal Pembelian</td>
                             <td>:</td>
-                            <td>{{ $last->buy_date }}</td>
+                            <td>{{ $last_buy }}</td>
                         </tr>
                         <tr>
                             <td>Valid Hingga Tanggal</td>
                             <td>:</td>
-                            <td>{{ $last->valid_until }}</td>
+                            <td>{{ $last_valid }}</td>
                         </tr>
                         <tr>
                             <td>Email Pemesan</td>
                             <td>:</td>
-                            <td>{{ $last->email }}</td>
+                            <td>{{ $email_user }}</td>
                         </tr>
                     </table>
                 </div>

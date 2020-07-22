@@ -23,6 +23,9 @@ class CreateUsersTable extends Migration
             $table->string('phone')->nullable();
             $table->string('address')->nullable();
             $table->string('img')->nullable();
+            $table->string('destination_name')->nullable();
+            $table->string('buy_date')->nullable();
+            $table->string('valid_until')->nullable();
             $table->timestamps();
         });
     }

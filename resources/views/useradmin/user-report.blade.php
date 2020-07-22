@@ -47,7 +47,7 @@
 					  <td>{{$user->name}}</td>
 					  <td>{{$user->email}}</td>
 				  </tr>
-				  $nomer++
+				  @php $nomer++ @endphp
 				  @endforeach
 				</table>
 		

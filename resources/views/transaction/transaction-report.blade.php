@@ -55,7 +55,7 @@
                      <td>{{$transaksi->buy_date}}</td>
                      <td>{{$transaksi->valid_until}}</td>
                  </tr>
-                 $nomer++;
+                 @php $nomer++; @endphp
                  @endforeach
 				</table>
 		

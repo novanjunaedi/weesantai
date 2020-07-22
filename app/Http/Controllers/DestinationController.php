@@ -37,7 +37,10 @@ class DestinationController extends Controller
 	public function edit($id)
 	{
 		$destination = \App\Destination::find($id);
-		return view('add_destination/edit', ['destination' => $destination]);
+		$user_data = \App\User::all();
+        $adminAll = \App\Admin::all();
+        $admin = $adminAll[0];
+		return view('add_destination/edit', ['destination' => $destination, 'admin' => $admin]);
 	}
 
 	public function update(Request $request, $id)

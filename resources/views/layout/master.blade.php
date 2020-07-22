@@ -41,7 +41,6 @@
 
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
-
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
         <a class="nav-link pb-0" href="/dashboard"><i class="fas fa-fw fa-tachometer-alt"></i>

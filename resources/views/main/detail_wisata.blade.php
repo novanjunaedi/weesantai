@@ -84,7 +84,7 @@
 						<p>{{$destination->price}} /orang.</p>
 					</div>
 					<div class="col-sm-12 col-md-4">
-						<a class="btn btn-warning mt-4 mb-4 text-white" data-toggle="modal" data-target="#exampleModal">Pesan Tiket Sekarang</a>
+						<a class="btn btn-success mt-4 mb-4 text-white" data-toggle="modal" data-target="#exampleModal" >Pesan Tiket Sekarang</a>
 					</div>
 				</div>
 			</div>

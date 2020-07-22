@@ -12,7 +12,7 @@ class UserController extends Controller
 	{
 		$user_data = \App\User::where('user_id', $id)->first();
 		$transactions = \App\Transaction::where('name', $user_data->name)->get();
-		$destinations = \App\Destination::all();
+		$destinations = \App\Destination::all()->sortByDesc('rating'); 
 
 		$query = Auth::guard('role')->user();
 		$s_id = $query->id;
