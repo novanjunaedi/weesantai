@@ -56,6 +56,7 @@ Route::middleware(['auth:role', 'checkRole:admin'])->group(function () {
     Route::get('/transaction/{id}/delete', 'TranscController@delete');
 
     Route::get('/user-admin', 'UserAdminController@index');
+    Route::get('/user/{id}/delete', 'UserAdminController@delete');
     Route::get('/user-admin/print-pdf', 'UserAdminController@pdf');
 
     Route::get('/transaction', 'TranscController@index');
