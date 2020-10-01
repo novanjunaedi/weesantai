@@ -10,3 +10,6 @@ We built this web application using Laravel 5.8 and MySQL Database.
 1. Fajar Mukti Hidayat
 2. Muhammad Rizqy
 3. Novan Junaedi
+
+## Preview
+![Weesantai Preview](https://i.ibb.co/stWZTqz/Whats-App-Image-2020-10-01-at-10-06-25-PM.jpg)
